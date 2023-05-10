@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<!-- Mirrored from kajdook.com/dialog/v1.5/user-lockscreen1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Jul 2022 17:59:41 GMT -->
+<head>
+	<!-- Header meta tags -->
+	<meta charset="utf-8">
+	<title>دیالوگ - قفل کردن صفحه</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<link rel="stylesheet" type="text/css" href="css/font.css" />
+	<link rel="stylesheet" type="text/css" href="css/color.css" />
+
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		html {
+			min-height: 100%;
+			background: linear-gradient(to right, rgba(13, 178, 222, 0.2), rgba(0, 91, 234, 0.2)), url('img/register.png');
+		}
+		body {
+			padding-top: 50px;
+			direction:rtl;
+		}
+		a, a:hover, a:focus {
+			text-decoration: none;
+		}
+		#msform {
+			width: 50%;
+			margin: 50px auto;
+			text-align: center;
+			position: relative;
+		}
+
+		#msform fieldset {
+			background: white;
+			border: 0 none;
+			border-radius: 3px;
+			box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+			padding: 20px 30px;
+			box-sizing: border-box;
+			width: 80%;
+			margin: 0 10%;
+			position: absolute;
+		}
+
+		#msform fieldset:not(:first-of-type) {
+			display: none;
+		}
+
+		#msform fieldset > input {
+			outline: none;
+			padding: 15px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			margin-bottom: 10px;
+			width: 100%;
+			box-sizing: border-box;
+			font-family: 'vazir', tahoma;
+			color: #2C3E50;
+			font-size: 13px;
+		}
+		#msform label {
+			display: block;
+			text-align: right;
+			clear: both;
+			margin-bottom: 20px;
+		}
+
+		#msform .action-button {
+			width: 150px;
+			font-weight: bold;
+			border: 0 none;
+			border-radius: 1px;
+			cursor: pointer;
+			padding: 10px 5px;
+			margin: 10px 5px;
+		}
+
+		.fs-title {
+			font-size: 15px;
+			text-transform: uppercase;
+			color: #2C3E50;
+			margin-bottom: 10px;
+		}
+
+		.fs-subtitle {
+			font-weight: normal;
+			font-size: 13px;
+			color: #666;
+			margin-bottom: 20px;
+		}
+
+		.admin-pic {
+			width: 150px;
+			box-shadow: 0 0 3px #333;
+			border-radius: 50%;
+		}
+		.clr-picker {
+			display: none;
+		}
+
+		@media (max-width: 767px) {
+			#msform {width: 100%}
+			#msform fieldset {width: 90%; margin: 0 5%}
+		}
+
+	</style>
+
+	<!-- Fav and touch icons -->
+	<link rel="shortcut icon" href="img/favicon/favicon.png">
+
+</head>
+
+<body id="purple">
+
+	<h1 align="center"><a class="t#eee=bbb" href="index-2.html">برند یا لوگو</a></h1>
+
+	<!-- multistep form -->
+	<form id="msform">
+
+		<!-- fieldsets -->
+		<fieldset>
+			<img src="img/other/avatar7.jpg" class="admin-pic" />
+			<h2 class="fs-title">آلبرت اینشتین</h2>
+			<input type="password" name="pass" placeholder="رمزعبور" />
+			<input type="button" class="next action-button btn-themecolor" value="فراموشی رمزعبور" />
+			<input type="submit" class="submit action-button btn-themecolor" value="باز کردن" />
+		</fieldset>
+
+		<fieldset>
+			<h2 class="fs-title">رمزعبور را فرموش کرده اید؟</h2>
+			<h3 class="fs-subtitle">برای بازنشانی رمزعبور ایمیل خود را وارد کنید.</h3>
+			<input type="text" name="email" placeholder="ایمیل" />
+			<input type="button" class="previous action-button btn-themecolor" value="بازگشت" />
+			<input type="submit" class="submit action-button btn-themecolor" value="ارسال" />
+		</fieldset>
+
+
+	</form>
+
+
+	<!-- downloaded scripts (for all pages) -->
+	<script type="text/javascript" src="js/pack.js"></script>
+
+	<!-- inline custom script (for this page) -->
+	<script>
+		$(function() {
+
+			//jQuery time
+			var current_fs, next_fs, previous_fs; //fieldsets
+			var left, opacity, scale; //fieldset properties which we will animate
+			var animating; //flag to prevent quick multi-click glitches
+
+			$(".next").click(function(){
+				if(animating) return false;
+				animating = true;
+				
+				current_fs = $(this).parent();
+				next_fs = $(this).parent().next();
+				
+				//show the next fieldset
+				next_fs.show(); 
+
+				//hide the current fieldset with style
+				current_fs.animate({opacity: 0}, {
+					step: function(now, mx) {
+						scale = 1 - (1 - now) * 0.2;
+						left = (now * 50)+"%";
+						opacity = 1 - now;
+						current_fs.css({'transform': 'scale('+scale+')'});
+						next_fs.css({'left': left, 'opacity': opacity});
+					}, 
+					duration: 800, 
+					complete: function(){
+						current_fs.hide();
+						animating = false;
+					}, 
+					//this comes from the custom easing plugin
+					easing: 'easeInOutBack'
+				});
+			});
+
+			$(".previous").click(function(){
+				if(animating) return false;
+				animating = true;
+				
+				current_fs = $(this).parent();
+				previous_fs = $(this).parent().prev();
+				
+				//show the previous fieldset
+				previous_fs.show(); 
+
+				//hide the current fieldset with style
+				current_fs.animate({opacity: 0}, {
+					step: function(now, mx) {
+						scale = 0.8 + (1 - now) * 0.2;
+						left = ((1-now) * 50)+"%";
+						opacity = 1 - now;
+						current_fs.css({'left': left});
+						previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
+					}, 
+					duration: 800, 
+					complete: function(){
+						current_fs.hide();
+						animating = false;
+					}, 
+					//this comes from the custom easing plugin
+					easing: 'easeInOutBack'
+				});
+			});
+
+			$(".submit").click(function(){
+				return false;
+			});
+
+		});
+	</script>
+
+	<!-- custom scripts (for this page) -->
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+
+			if(typeof Storage !== 'undefined' && localStorage.FirstSave == 'yes') { 
+				// theme full colors
+				$('body').attr("id", localStorage.FC );
+			}
+			else {
+				// or set cookie
+			}
+
+		});
+
+	</script>
+
+
+</body>
+
+<!-- Mirrored from kajdook.com/dialog/v1.5/user-lockscreen1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Jul 2022 17:59:41 GMT -->
+</html>

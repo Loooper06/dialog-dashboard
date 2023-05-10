@@ -1,0 +1,1290 @@
+﻿<!DOCTYPE html>
+<html lang="fa">
+
+<!-- Mirrored from kajdook.com/dialog/v1.5/chart-flot.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Jul 2022 17:59:33 GMT -->
+<head>
+	<!-- Header meta tags -->
+	<meta charset="utf-8">
+	<title>دیالوگ - نمودار شناور</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<!-- Fav and touch icons -->
+	<link rel="shortcut icon" href="img/favicon/favicon.png">
+
+</head>
+
+<body id="blue" class="container-fluid"> <!-- please do not set id for body -->
+
+	<!-- loaders and alerts -->
+	<div class="page-loading">
+		<svg class="circular" height="50" width="50">
+			<circle class="path" cx="25" cy="25.2" r="19.9" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+		</svg>
+	</div>
+
+	<div id="wait" class="alert" style="display:none">
+		<i class="la la-spinner la-spin"></i>بارگذاری ...
+	</div>
+
+	<div id="ChangesSaved" class="alert" style="display:none">
+		<i class="la la-check"></i>ذخیره شد
+	</div>
+
+	<div id="lockscreen" style="display:none">
+		<i class="la la-lock"></i>برند
+		<p>اگر این برگه را رفرش کنید به برگه ورود منتقل خواهید شد.</p>
+	</div>
+
+
+
+	<!-- Main content -->
+	<section class="main_content clearfix">
+
+
+		<!-- Header and top nav -->
+		<header id="top-navbar">
+
+			<!-- Hidden top help panel -->
+			<div id="top_panel" class="t#333 container-fluid">
+				<div class="help-text b#fff row">
+					<div id="shortcut-help" class="col-md-3 d-none d-sm-block"> <!-- This id is for introjs tour -->
+						<h4>کلیدهای میانبر</h4>
+						<p>M - منو</p>
+						<p>R - پنل سمت چپ</p>
+						<p>T - پنل بالا</p>
+						<p>N - حالت شب</p>
+						<p>B - حالت جعبه ای</p>
+						<p>V - منوی عمودی</p>
+						<p>H - منوی افقی</p>
+						<p><strong>LOCK</strong> - برای <i class="la la-lock t#333"></i> یا <i class="la la-unlock t#333"></i></p>
+					</div>
+					
+					<div class="description col p-3">
+						<h4>توضیحات</h4>
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+						چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+						و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.<br/>
+						چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز<br/>
+						کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+					</div>
+				</div>
+			</div>
+			<!-- /End Hidden top help panel -->
+
+
+			<!-- Header buttons and navbar -->
+			<nav id="first-navbar" class="navbar navbar-expand-md">
+				<div class="container-fluid">
+
+					<div class="navbar-header">
+						<!-- Sidebar toggle button -->
+						<i id="sidebar_toggle" class="la la-outdent float-start" data-bs-placement="left" data-bs-toggle="tooltip" title="تغییر وضعیت منو"></i>
+						<!-- mobile and tablet -->
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav_1">
+							<i class="la la-bars la-2x"></i>
+						</button>
+
+						<!-- Side panel toggle -->
+						<i class="side_panel_toggle_1 la la-sliders la-2x float-end d-sm-block d-md-none"></i>
+					</div>
+
+					<div id="nav_1" class="collapse navbar-collapse ms-2">
+
+						<!-- navbar start buttons -->
+						<ul class="navbar-nav me-auto">
+
+							<!-- Mega menu -->
+							<li id="mega_menu_btn">
+								<a class="dropdown-toggle">
+									مگامنو
+								</a>
+								<div id="mega_menu">
+									<div class="row">
+										<ul class="col link">
+											<h4>لینک متنی</h4>
+											<li><a href="#">تماس با ما</a></li>
+											<li><a href="#">صفحه اصلی</a></li>
+											<li><a href="#">درباره ما</a></li>
+											<li><a href="#">محصولات ما</a></li>
+											<li><a href="#">وبلاگ</a></li>
+											<li><a href="#">دریافت اپلیکیشن</a></li>
+										</ul>
+
+										<ul class="col icon">
+											<h4>لینک به همراه آیکون</h4>
+											<li><a href="#"><i class="la la-user"></i>کاربران</a></li>
+											<li><a href="#"><i class="la la-forward"></i>محصولات</a></li>
+											<li><a href="#"><i class="la la-plus"></i>سود</a></li>
+											<li><a href="#"><i class="la la-commenting"></i>دیدگاه ها</a></li>
+											<li><a href="#"><i class="la la-server"></i>سرور</a></li>
+										</ul>
+
+										<ul class="col image">
+											<h4>لینک به همراه تصویر</h4>
+											<li><img src="img/other/avatar7.jpg" alt="بارگذاری نشد"><a href="#">جان</a></li>
+											<li><img src="img/other/avatar3.jpg" alt="بارگذاری نشد"><a href="#">جک</a></li>
+											<li><img src="img/other/avatar5.jpg" alt="بارگذاری نشد"><a href="#">جیم</a></li>
+										</ul>
+
+										<ul class="col custom">
+											<h4>محتوای دلخواه</h4>
+											<img src="img/1.jpg" alt="بارگذاری نشد">
+											لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+										</ul>
+									</div>
+								</div>
+							</li>
+							<!-- /End Mega menu -->
+
+							<!-- Panel manager -->
+							<li class="dropdown" id="find_panels">
+								<a class="dropdown-toggle" data-bs-toggle="dropdown">
+									مدیریت پنل
+								</a>
+								<ul class="dropdown-menu b%9" id="all_panels">
+									<!-- Fill with jQuery -->
+								</ul>
+							</li>
+							<!-- /End Panel manager -->
+
+							<!-- Scroll to -->
+							<li class="dropdown" id="scroll_to_panels">
+								<a class="dropdown-toggle" data-bs-toggle="dropdown">
+									رفتن به
+								</a>
+								<ul class="dropdown-menu b%9" id="panels_to_scroll">
+									<div class="dropmenu-header bgtxt-themecolor">
+										با کلیک روی لینک های زیر به پنل آن هدایت می شوید.
+									</div>
+									<!-- Fill with jQuery -->
+								</ul>
+							</li>
+							<!-- /End Scroll to -->
+
+							<!-- Creat new -->
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-bs-toggle="dropdown">
+									<i class="la la-plus"></i> افزودن
+								</a>
+								<ul class="dropdown-menu b%9">
+									<li><a class="dropdown-item" href="#"><i class="la la-barcode"></i> محصول</a></li>
+									<li><a class="dropdown-item" href="#"><i class="la la-edit"></i> نوشته</a></li>
+									<li><a class="dropdown-item" href="#"><i class="la la-user-plus"></i> کاربر</a></li>
+									<li><a class="dropdown-item" href="#"><i class="la la-ticket"></i> تیکت</a></li>
+									<li><a class="dropdown-item" href="#"><i class="la la-file"></i> فایل</a></li>
+									<li><a class="dropdown-item" href="#"><i class="la la-plug"></i> افزونه</a></li>
+								</ul>
+							</li>
+							<!-- /End Creat new -->
+						</ul>
+
+						<!-- navbar end buttons -->
+						<ul class="nav navbar-right">
+
+							<!-- profile dropdown menu -->
+							<li class="nav-item dropdown top-user-menu">
+								<a class="nav-link dropdown-toggle p-0" data-bs-toggle="dropdown">
+									<img src="img/other/admin.jpg">
+									<span class="badge bg-danger badge-dot"></span>
+								</a>
+								<ul class="dropdown-menu b%9">
+									<div class="row dropmenu-header bgtxt-themecolor">
+										<div class="col-4 p-0">
+											<img src="img/other/admin.jpg">
+										</div>
+										<div class="col pt-1">
+											<h6>آلبرت انیشتین</h6>
+											<span>حسابدار</span>
+										</div>
+									</div>
+									<li class="dropdown-item">
+										<a href="#">
+											<i class="la la-user"></i>مشخصات
+										</a>
+									</li>
+									<li class="dropdown-item">
+										<a href="#">
+											<i class="la la-edit"></i>ویرایش نمایه
+										</a>
+									</li>
+									<li class="dropdown-item">
+										<a href="#">
+											<i class="la la-inbox"></i>صندوق ورودی
+										</a>
+									</li>
+									<li class="dropdown-item">
+										<a href="#">
+											<i class="la la-envelope"></i>پیام ها
+										</a>
+									</li>
+									<li class="dropdown-item">
+										<a href="#">
+											<i class="la la-cog"></i>تنظیمات حساب
+										</a>
+									</li>
+									<li class="dropdown-item">
+										<a href="user-login1.html">
+											<i class="la la-sign-out"></i>خروج از سیستم
+										</a>
+									</li>
+								</ul>
+							</li>
+
+
+							<!-- Save options -->
+							<li id="save_options" data-bs-placement="bottom" data-bs-toggle="tooltip" title="ذخیره تنظیمات">
+								<i class="la la-save"></i>
+							</li>
+
+							<!-- Full screen -->
+							<li id="full_screen" data-bs-placement="bottom" data-bs-toggle="tooltip" title="تمام صفحه">
+								<i class="la la-window-maximize"></i>
+							</li>
+
+							<!-- Search form -->
+							<li>
+								<form>
+									<i class="la la-search"></i>
+									<input class="form-control" placeholder="کلمه کلیدی + اینتر" />
+								</form>
+							</li>
+
+							<!-- Top hidden panel -->
+							<li id="top_panel_slide" data-bs-placement="bottom" data-bs-toggle="tooltip" title="پنل راهنما">
+								<i class="la la-question-circle-o"></i>
+							</li>
+
+							<!-- Side panel toggle -->
+							<li class="side_panel_toggle_2 d-none d-md-block" data-bs-placement="right" data-bs-toggle="tooltip" title="پنل کناری">
+								<i class="la la-sliders"></i>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</nav>
+			<!-- End header buttons and navbar -->
+		</header>
+		<!-- /End header and top nav -->
+
+
+
+		<!-- side panel -->
+		<section id="side_panel" class="b#fff">
+
+			<div class="board">
+
+				<ul class="nav board-nav">
+
+					<li class="nav-item" role="presentation">
+						<a class="active" href="#options" data-bs-toggle="tab">
+							<span class="la la-lg la-cogs round-tabs" data-bs-toggle="tooltip" title="تنظیمات"></span>
+						</a>
+					</li>
+
+					<li class="nav-item" role="presentation" id="taskbtn">
+						<a href="#tasks" data-bs-toggle="tab">
+							<span class="la la-lg la-tasks round-tabs" data-bs-toggle="tooltip" title="کار ها"></span>
+						</a>
+					</li>
+
+					<li class="nav-item" role="presentation">
+						<a href="#chats" data-bs-toggle="tab">
+							<span class="la la-lg la-comments round-tabs" data-bs-toggle="tooltip" title="گفت و گوها"></span>
+							<span class="badge bg-danger blink chat-alert">12</span> 
+						</a>
+					</li>
+				</ul>
+
+				<div class="tab-content">
+
+					<!-- options tab -->
+					<div class="tab-pane active" id="options">
+						<ul class="list-group mb-4">
+
+							<h4 class="Montserrat-font">تنظیمات پوسته</h4>
+
+							<!-- font size -->
+							<li class="list-group-item fs-btn">
+								<span>اندازه فونت</span>
+								<i class="la la-plus-square fontsize float-end" id="larger"></i>
+								<i class="la la-minus-square fontsize float-end" id="smaller"></i>
+							</li>
+
+
+							<!-- theme color -->
+							<li class="list-group-item full-color-changer">
+								<p>رنگ کلی قالب</p>
+								<button data-color="blue" style="background: #3d5afe"></button>
+								<button data-color="purple" style="background: #d500f9"></button>
+								<button data-color="pink" style="background: #f50057"></button>
+								<button data-color="green" style="background: #00897B"></button>
+								<button data-color="orange" style="background: #FF3D00"></button>
+								<button data-color="yellow" style="background: #fbb400"></button>
+								<button data-color="indigo" style="background: #6200ee"></button>
+								<button data-color="black" style="background: #333333"></button>
+							</li>
+
+
+							<!-- menu color -->
+							<li class="list-group-item menu-color-changer">
+								<p>رنگ منو</p>
+								<button style="background: #555555; color: #ddd;"></button>
+								<button style="background: #ffffff; color: #535353;"></button>
+								<button style="background: #795548; color:#fff;"></button>
+								<button style="background: #546E7A; color:#fff;"></button>
+								<button style="background: linear-gradient(40deg,#0336ff,#ff0266); color:#fff;"></button>
+								<button style="background: linear-gradient(40deg,#03dac5,#6200ee); color:#fff;"></button>
+								<button style="background: linear-gradient(40deg,#0db2de,#005bea); color:#fff;"></button>
+								<button style="background: linear-gradient(40deg,#ffffff,#FFEB3B); color:#333;"></button>
+							</li>
+
+
+							<!-- background image -->
+							<li class="list-group-item d-grid gap-2">
+								<p class="mb-0">تصویر پس زمینه:</p>
+								<button id="patt_btn" class="btn btn-outline-themecolor round" data-bs-toggle="modal" data-bs-target="#PatternsModal">
+									نمایش الگوها
+								</button>
+							</li>
+
+
+							<!-- menu position -->
+							<li class="list-group-item">
+								موقعیت منو
+								<select id="m_orient" class="form-select form-select-sm option-select float-end">
+									<option value="vertical" selected>عمودی</option>
+									<option value="horizontal">افقی</option>
+								</select>
+							</li>
+
+
+							<!-- fixed top bar -->
+							<li class="list-group-item">
+								ثابت بودن نوار بالا
+								<div class="material-switch float-end">
+									<input id="topfix" type="checkbox" checked />
+									<label for="topfix" class="bg-primary"></label>
+								</div>
+							</li>
+
+
+							<!-- night mode -->
+							<li class="list-group-item">
+								حالت شب
+								<div class="material-switch float-end">
+									<input id="nightmode" type="checkbox"/>
+									<label for="nightmode" class="bg-warning"></label>
+								</div>
+							</li>
+
+
+							<!-- boxed layout -->
+							<li class="list-group-item">
+								طرح جعبه ای
+								<div class="material-switch float-end">
+									<input id="box_option" type="checkbox"/>
+									<label for="box_option" class="bg-success"></label>
+								</div>
+							</li>
+
+
+							<!-- Corners radius -->
+							<li class="list-group-item">
+								شعاع پنل ها:
+								<span id="corners_txt"></span>
+								<div id="corners_s" class="m-t-10"></div>
+							</li>
+
+
+							<!-- Sidebar width -->
+							<li class="list-group-item">
+								عرض ستون کناری:
+								<span id="side_width_txt"></span>
+								<div id="side_w_s" class="m-t-10"></div>
+							</li>
+
+						</ul>
+					</div>
+					<!-- /End options tab -->
+					
+					<!-- tasks tab -->
+					<div class="tab-pane" id="tasks">
+
+						<!-- projects progress bars -->
+						<ul class="list-group mb-2">
+							<li class="list-group-item">
+								<h4>آمار مفید</h4>
+							</li>
+							<li class="list-group-item">
+								<a href="#">پنل مدیریت 27%</a>
+								<!-- for usage of pr-bad and pr-good please open custom-functions.js -->
+								<div class="progress pr-good">
+									<div class="progress-bar progress-bar-striped" style="width: 27%"></div>
+								</div>
+								<a href="#">به روزرسانی ها 60%</a>
+								<div class="progress pr-good">
+									<div class="progress-bar progress-bar-striped" style="width: 60%"></div>
+								</div>
+								<a href="#">استفاده سی پی یو 90%</a>
+								<div class="progress pr-bad">
+									<div class="progress-bar progress-bar-striped" style="width: 90%"></div>
+								</div>
+								<a href="#">برنامه اندروید 85%</a>
+								<div class="progress pr-good">
+									<div class="progress-bar progress-bar-striped" style="width: 85%"></div>
+								</div>
+								<a href="#">افزایش حمله ها 10%</a>
+								<div class="progress pr-bad">
+									<div class="progress-bar progress-bar-striped" style="width: 10%"></div>
+								</div>
+								<a href="#">و بیشتر...</a>
+							</li>
+						</ul>
+
+						<!-- tasks list -->
+						<ul class="list-group">
+							<li class="list-group-item">
+								<h4>شما 6 کار دارید</h4>
+							</li>
+							<li class="list-group-item">
+								<p class="badge b#7a3">به روزرسانی افزونه</p>
+								<div class="side-task">
+									لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+								</div>
+							</li>
+							<li class="list-group-item">
+								<p class="badge b#239 t#f8e">مهمانی تولد</p>
+								<div class="side-task">
+									لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+								</div>
+							</li>
+							<li class="list-group-item">
+								<p class="badge b#192 t#bef">تیم توسعه دهنده</p>
+								<div class="side-task">
+									لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- /End tasks tab -->
+					
+					<!-- chat tab -->
+					<div class="tab-pane" id="chats">
+						<!-- chat tower -->
+						<div class="chat-tower b#fff">
+
+							<!-- chat header -->
+							<div class="tower-head b#fff t#7b7b7b">
+								<div class="float-start">
+									<span id="chat_header">انتخاب کنید</span>
+								</div>
+								<!-- chat buttons -->
+								<div class="float-end btn-group">
+
+									<!-- options for chat list -->
+									<div id="chats_btn" class="btn-group">
+										<button data-bs-toggle="dropdown"><i class="la la-cog"></i></button>
+										<ul role="menu" class="dropdown-menu float-end">
+											<li><a class="dropdown-item" href="#">من را آفلاین نشان بده</a></li>
+											<li><a class="dropdown-item" href="#">پاک کردن لیست</a></li>
+											<li><a class="dropdown-item" href="#">برون بری لیست</a></li>
+										</ul>
+									</div>
+
+									<!-- options for message list -->
+									<div id="messages_btn" class="btn-group">
+										<button data-bs-toggle="dropdown"><i class="la la-cogs"></i></button>
+										<ul role="menu" class="dropdown-menu float-end">
+											<li><a class="dropdown-item" href="#">مسدود کردن کاربر</a></li>
+											<li><a class="dropdown-item" href="#">پاک کردن پیام ها</a></li>
+											<li><a class="dropdown-item" href="#">ایمیل کردن گفت و گو</a></li>
+										</ul>
+									</div>
+
+									<!-- log out from live chat -->
+									<button id="log_outer"><i class="t#444 la la-power-off"></i></button>
+								</div>
+
+								<!-- /end chat buttons -->
+								<div class="back-to">
+									<i class="la la-2x la-hand-o-right"></i>
+								</div>
+							</div>
+							<!-- /End chat header -->
+
+							<!-- chat body -->
+							<div class="tower-body js-control b#6c7a89">
+
+
+								<!-- users list fade -->
+								<div id="chat_users">
+
+									<!-- user loop -->
+									<div class="media bgtxt-themecolor"> 
+										<img src="img/other/avatar2.jpg" alt="بارگذاری نشد" data-lity> 
+										<div class="media-body"> 
+											<p>سمانه</p>
+											<small>3:30 بعد از ظهر</small>
+											<p>ایالات متحده آمریکا</p>
+										</div> 
+									</div>
+									<!-- /End user loop -->
+
+									<!-- user loop -->
+									<div class="media bgtxt-themecolor"> 
+										<img src="img/other/avatar1.jpg" alt="بارگذاری نشد" data-lity> 
+										<div class="media-body"> 
+											<p>سمیه</p>
+											<small>1:30 بعد از ظهر</small>
+											<p>ایالات متحده آمریکا</p>
+										</div>
+									</div>
+									<!-- /End user loop -->
+
+									<!-- user loop -->
+									<div class="media bgtxt-themecolor"> 
+										<img src="img/other/avatar3.jpg" alt="بارگذاری نشد" data-lity> 
+										<div class="media-body"> 
+											<p>مجید</p>
+											<small>9:30 صبح</small>
+											<p>کارگردان هنری</p>
+										</div> 
+									</div>
+									<!-- /End user loop -->
+
+									<!-- user loop -->
+									<div class="media bgtxt-themecolor"> 
+										<img src="img/other/avatar4.jpg" alt="بارگذاری نشد" data-lity> 
+										<div class="media-body"> 
+											<p>محمد</p>
+											<small>8:00 صبح</small>
+											<p>تیم سئو</p>
+										</div> 
+									</div>
+									<!-- /End user loop -->
+								</div>
+								<!-- /End chat_users -->
+
+
+								<!-- messages of user fade -->
+								<div id="user_message">
+									<div class="chat-line">
+										<abbr>امروز</abbr>
+									</div>
+									<!-- Message loop -->
+									<div class="direct-chat-msg">
+										<img src="img/other/avatar5.jpg" alt="بارگذاری نشد" data-lity>
+										<div class="chat-info clearfix"><span>لورم</span></div>
+
+										<div class="direct-chat-text">
+											من هنگام ورود به حساب کاربری خود خطایی دریافت کردم. معنی این خطاها چیست؟
+										</div>
+
+										<div class="chat-info clearfix">
+											<small class="float-end">3:36 بعد از ظهر</small>
+										</div>
+									</div>
+									<!-- /End message loop -->
+									<!-- Message loop -->
+									<div class="direct-chat-msg">
+										<img src="img/other/admin.jpg" alt="بارگذاری نشد" data-lity>
+										<div class="chat-info clearfix"><span>مدیر</span></div>
+
+										<div class="direct-chat-text">
+											سلام، می توانم متن خطا را ببینم؟
+										</div>
+
+										<div class="chat-info clearfix">
+											<small class="float-end">3:37 بعد از ظهر</small>
+										</div>
+									</div>
+									<!-- /End message loop -->
+									<!-- Message loop -->
+									<div class="direct-chat-msg">
+										<img src="img/other/avatar5.jpg" alt="بارگذاری نشد" data-lity>
+										<div class="chat-info clearfix"><span>لورم</span></div>
+
+										<div class="direct-chat-text">
+											<img src="img/other/warning.jpg" alt="بارگذاری نشد" data-lity>
+										</div>
+										<div class="chat-info clearfix">
+											<small class="float-end">3:40 بعد از ظهر</small>
+										</div>
+									</div>
+									<!-- /End message loop -->
+									<!-- Message loop -->
+									<div class="direct-chat-msg">
+										<img src="img/other/avatar5.jpg" alt="بارگذاری نشد" data-lity>
+										<div class="chat-info clearfix"><span>لورم</span></div>
+
+										<div class="direct-chat-text">
+											ببخشید، تصویر را اشتباه فرستادم. تصویر درست:
+										</div>
+										<div class="chat-info clearfix">
+											<small class="float-end">3:40 بعد از ظهر</small>
+										</div>
+									</div>
+									<!-- /End message loop -->
+									<!-- Message loop -->
+									<div class="direct-chat-msg">
+										<img src="img/other/avatar5.jpg" alt="بارگذاری نشد" data-lity>
+										<div class="chat-info clearfix"><span>لورم</span></div>
+
+										<div class="direct-chat-text">
+											<img src="img/other/error.jpg" alt="بارگذاری نشد" data-lity>
+										</div>
+										<div class="chat-info clearfix">
+											<small class="float-end">3:45 بعد از ظهر</small>
+										</div>
+									</div>
+									<!-- /End message loop -->
+								</div>
+								<!-- /End user_message -->
+
+							</div>
+							<!-- /End chat body -->
+							
+							<!-- chat fotter -->
+							<div class="tower-foot b#fff">
+								<textarea id="status_message" placeholder="پیام خود را بنویسید..." name="message"></textarea>
+								<div class="btn-footer">
+									<span class="bg_none">
+										<i class="la la-film"></i>
+										<input name="uploadvideo" role="button" tabindex="0" type="file" accept=".mp4,.avi,.mkv,.mov" />
+									</span>
+									<span class="bg_none">
+										<i class="la la-camera"></i>
+										<input name="uploadimage" role="button" tabindex="0" type="file" accept=".jpg,.png,.gif" />
+									</span>
+									<span class="bg_none">
+										<i class="la la-paperclip"></i>
+										<input name="uploadfile" role="button" tabindex="0" type="file" accept=".xls,.xlsx,.doc,.docx,.pdf,.xps,.psd" />
+									</span>
+
+									<!-- send message -after load each message pleas run "chat_scroller();" js function- -->
+									<button id="send_btn" class="bg_none float-end"><i class="la la-send"></i></button>
+								</div>
+							</div>
+							<!-- /End chat fotter -->
+
+						</div>
+						<!-- /End chat -->
+					</div>
+					<!-- /End chats tab -->
+					
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</section>
+		<!-- /End side panel -->
+
+
+
+		<!-- sidebar -->
+		<aside id="sidebar" class="is-open"><!-- This id(=sidebar) is important -->
+			<div id="menu_ver" class="StickySidebar">
+
+				<!-- brand title (show when top menu is not fixed) -->
+				<div class="hiddenbrand">
+					گروه مهندسی ویژن
+				</div>
+
+				<!-- admin details -->
+				<div class="container-fluid py-3 administrator"> 
+					<div class="row mb-2">
+						<div class="col-5 admin-pic">
+							<img class="img-rounded" src="img/other/admin.jpg" alt="بارگذاری نشد" data-lity>
+						</div>
+						<div class="col-7 admin-name">
+							<div id="my_name">آلبرت اینشتین</div>
+							<div class="gooleh b#4CAF50"></div>
+							<span>حسابدار</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col text-center">
+							<a href="#"><i class="la la-key"></i></a>
+						</div>
+						<div class="col text-center">
+							<a href="#"><i class="la la-envelope-o"></i></a>
+							<span class="badge bg-danger admin-alert blink">4</span>
+						</div>
+						<div class="col text-center">
+							<a href="#"><i class="la la-power-off"></i></a>
+						</div>
+					</div>
+					<span id="admin_close" class="la la-times"></span>
+				</div>
+				<!-- /End admin details --> 
+
+
+				<!-- accordion menu -->
+				<div id="cssmenu">
+					<ul>
+						<li class="sidebar-menu-separator"></li>
+
+						<!-- Dashboard -->
+						<li>
+							<a href="index-2.html">
+								<i class="la la-tachometer"></i> 
+								<span>پیشخوان</span>
+							</a>
+						</li>
+
+						<!-- UI elements -->
+						<li class="has-sub">
+							<a>
+								<i class="la la-suitcase"></i>
+								<span>رابط کاربری</span>
+								<span class="badge bgtxt-themecolor">5</span>
+							</a>
+							<ul>
+								<li><a href="progress-bars.html">نوارهای پیشرفت</a></li>
+								<li><a href="containers.html">کانتینرها</a></li>
+								<li><a href="notifications.html">اطلاعیه ها</a></li>
+								<li><a href="buttons.html">دکمه ها</a></li>
+								<li class="has-sub">
+									<a>متریال <span class="badge b#ef7 t#333">2</span></a>
+									<ul>
+									   <li><a href="material.html">عناصر متریال</a></li>
+									   <li><a href="ihover.html">آی هاور<span class="badge b#f00">تازه</span></a></li>
+									</ul>
+								</li>
+								<li><a href="modal.html">مودال</a></li>
+								<li><a href="collapse-tree.html">نمودار درختی و آکاردئون</a></li>
+								<li><a href="widget.html">ابزارک ها</a></li>
+							</ul>
+						</li>
+
+						<!-- Forms -->
+						<li class="has-sub">
+							<a>
+								<i class="la la-wpforms"></i> 
+								<span>فرم ها</span>
+							</a>
+							<ul>
+								<li><a href="form-ui.html">رابط کاربری</a></li>
+								<li><a href="form-validation.html">اعتبارسنجی</a></li>
+								<li><a href="form-wizard.html">ویزارد</a></li>
+								<li><a href="editor.html">ویرایشگر</a></li>
+							</ul>
+						</li>
+
+						<li class="sidebar-menu-separator"></li>
+						<li class="sidebar-menu-separator"></li>
+
+						<!-- Tables -->
+						<li class="has-sub">
+							<a>
+								<i class="la la-table"></i> 
+								<span>جدول ها</span>
+							</a>
+							<ul>
+								<li><a href="table-static.html">استاتیک</a></li>
+								<li><a href="table-dynamic.html">داینامیک</a></li>
+							</ul>
+						</li>
+
+						<!-- Spesial pages -->
+						<li class="has-sub">
+							<a>
+								<i class="la la-gift"></i> 
+								<span>برگه های ویژه</span>
+							</a>
+							<ul>
+								<li><a href="mail.html">تبادل پیام</a></li>
+								<li><a href="calendar.html">تقویم شمسی و میلادی</a></li>
+								<li><a href="gallery.html">گالری</a></li>
+								<li><a href="file-manager.html">مدیریت فایل</a></li>
+								<li><a href="weather.html">آب و هوا</a></li>
+								<li><a href="blank.html">برگه خالی</a></li>
+							</ul>
+						</li>
+
+						<!-- Charts -->
+						<li class="has-sub">
+							<a>
+								<i class="la la-bar-chart"></i> 
+								<span>نمودارها</span>
+							</a>
+							<ul>
+								<li><a href="chart-canvasjs.html">نمودار canvas js</a></li>
+								<li><a href="chart-js.html">نمودار js</a></li>
+								<li><a href="chart-flot.html">نمودار شناور</a></li>
+								<li><a href="chart-easypie.html">نمودار دایره ای</a></li>
+							</ul>
+						</li>
+
+						<!-- Users -->
+						<li class="has-sub">
+							<a>
+								<i class="la la-users"></i> 
+								<span>کاربران</span>
+							</a>
+							<ul>
+								<li><a href="user-all.html">همه ی کاربران</a></li>
+								<li><a href="user-profile.html">پروفایل</a></li>
+								<li><a href="user-login1.html">برگه ورود</a></li>
+								<li class="has-sub"><a>برگه ثبت نام</a>
+									<ul>
+										<li><a href="user-register1.html">ثبت نام 1</a></li>
+										<li><a href="user-register2.html">ثبت نام 2</a></li>
+									</ul>
+								</li>
+								<li><a href="user-lockscreen1.html">قفل کردن صفحه</a></li>
+							</ul>
+						</li>
+
+						<li class="sidebar-menu-separator"></li>
+
+						<!-- Extra pages -->
+						<li class="has-sub">
+							<a>
+								<i class="la la-file"></i> 
+								<span>برگه های اضافه</span>
+							</a>
+							<ul>
+								<li><a href="page-404.html">ارور 404</a></li>
+								<li><a href="page-500.html">ارور 500</a></li>
+							</ul>
+						</li>
+
+						<!-- Google map -->
+						<li>
+							<a href="map-google.html">
+								<i class="la la-map-marker"></i> 
+								<span>نقشه</span>
+							</a>
+						</li>
+
+						<!-- Vector map -->
+						<li>
+							<a href="map-vector.html">
+								<i class="la la-map-o"></i> 
+								<span>وکتور</span>
+							</a>
+						</li> <!-- -->
+					</ul>
+
+					<ul id="user_btn" class="float-end">
+						<li><i class="la la-user la-2x"></i></li>
+					</ul>
+				</div>
+				<!-- /End accordion menu -->
+
+			</div>
+		</aside>
+		<!-- /End sidebar -->
+
+
+
+		<!-- content -->
+		<section class="clearfix b#fff">
+			<div id="content" class="col-12">
+
+				<!-- title and breadcrumb -->
+				<div class="page-header">
+					<h2 class="page-title">نمودار شناور</h2>
+
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index-2.html">پیشخوان</a></li>
+						<li class="breadcrumb-item">نمودارها</li>
+						<li class="breadcrumb-item">نمودار شناور</li>
+					</ol>
+
+					<div class="Jalali float-end">
+						<p id="JalaliDayAndDate"></p>
+					</div>
+				</div>
+				<!-- /End title and breadcrumb -->
+
+
+				<!-- description  -->
+				<div class="p-4 b#fff=fafafa m-b-30">
+					<h3>راهنما:</h3>
+					<a class="link-themecolor" target="_blank" href="https://github.com/flot/flot/blob/master/API.md">Flot chart</a>
+					<p>نمودار flot cahrt انواع نمایش خاص و زیبایی دارد که در این صفحه برخی از آنها را میبینید. اما متأسفانه با تاریخ شمسی هماهنگ نیست. در مواردی که نمایش تاریخ لزرومی ندارد میتوانید از این ابزار استفاده کنید.</p>
+				</div>
+				<!-- /End description -->
+
+
+				<table id="content_table">
+					<tr class="row1">
+					  	<td id="column0" class="connectcolumn" colspan="2">
+
+							<!-- Real time -->
+							<div class="card" id="Real">
+								<div class="card-header">
+									<i class="la la-hashtag sort-hand"></i>
+									زمان واقعی
+									<div class="pan-btn expand min"></div>
+								</div>
+								<div class="card-body">
+
+									<div id="flot_1" style="height: 400px;"></div>
+
+									<p class="m-t-20">به کمک بخش زیر می توانید سرعت حرکت نمودار را تغییر دهید و آن را به صورت دوره ای به روزرسانی کنید:</p>
+									<p>زمان بین به روزرسانی ها: <input id="updateInterval" style="width:50px"> میلی ثانیه</p>
+
+								</div>
+							</div>
+							<!-- /End Real time -->
+
+
+							<!-- Canvas -->
+							<div class="card" id="Canvas">
+								<div class="card-header">
+									<i class="la la-hashtag sort-hand"></i>
+									نشانک ها
+									<div class="pan-btn expand min"></div>
+								</div>
+								<div class="card-body">
+
+									<div id="canvas1" style="height: 400px"></div>
+
+								</div>
+							</div>
+							<!-- /End Canvas -->
+
+					  	</td>
+					</tr>
+
+					<tr class="row2">
+			          	<td id="column1" class="connectcolumn">
+
+							<!-- Visitors -->
+							<div class="card" id="Visitors">
+								<div class="card-header">
+									<i class="la la-hashtag sort-hand"></i>
+									نمودار دارای آستانه
+									<div class="pan-btn expand min"></div>
+								</div>
+								<div class="card-body">
+
+									<div id="threshold" class="demo-placeholder" style="height: 300px;"></div>
+
+									<p>با افزونه آستانه، می توانید یک رنگ خاص را به قسمتی از یک سری داده زیر یک آستانه اعمال کنید. این می تواند برای برجسته کردن مقادیر منفی مفید باشد.</p>
+
+									<p class="controls">
+										<button data="5.html">آستانه 5</button>
+										<button data="0.html">آستانه 0</button>
+										<button data="-2.html">آستانه 2.5-</button>
+									</p>
+
+								</div>
+							</div> 
+							<!-- /End Visitors -->
+
+			          	</td>
+
+			          	<td id="column2" class="connectcolumn">
+
+							<!-- Series -->
+							<div class="card" id="Series">
+								<div class="card-header">
+									<i class="la la-hashtag sort-hand"></i>
+									نمودار ترکیبی
+									<div class="pan-btn expand min"></div>
+								</div>
+								<div class="card-body">
+
+									<div id="series1" style="height: 300px"></div>
+
+									<p class="m-t-20">این نمودار از خطوط، نقطه ها، ناحیه های پر شده، نوارها و هر ترکیبی از این ها در همان طرح و حتی در سری داده های مشابه، پشتیبانی می کند.</p>
+
+								</div>
+							</div> 
+							<!-- /End Series -->
+
+
+			          	</td>
+			        </tr>
+				</table>
+			</div>
+		</section>
+		<!-- /End content -->
+
+
+
+
+		<!-- Footer and copyright -->
+		<footer class="page-footer b#444=000 t#bbb=fff">
+			طراحی شده با <i class="la la-heart t#F22613"></i> توسط گروه مهندسی ویژن
+			<a href="javascript:;" id="ToTop" class="la la-arrow-up float-end"></a>
+		</footer>
+		<!-- /End Footer -->
+
+
+	</section>
+	<!-- /End main content -->
+
+
+	<!-- Patterns modal -->
+	<div class="modal fade" id="PatternsModal" tabindex="-1" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="staticBackdropLabel">الگوها</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body text-center">
+					<ol id="pattern_thumb">
+						<!-- Load with Ajax -->
+					</ol>					
+				</div>
+				<div class="modal-footer">
+					<input id="PattInput" type="hidden" />
+					<div class="btn-group">
+						<button id="BodyBtn" class="btn btn-info">تنظیم روی بدنه</button>
+						<button id="ContentBtn" class="btn btn-info">تنظیم روی محتوا</button>
+					</div>
+					<button id="RemoveBtn" class="btn btn-themecolor float-end">حذف الگوها</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /End patterns modal -->
+
+
+
+	<!-- downloaded scripts (for all pages) -->
+	<!-- colorclass, jquery, uery-ui, bootstrap, lity, malihu, mousetrap, toastr, Waves -->
+	<script type="text/javascript" src="js/pack.js"></script> 
+
+	<!-- custom script (for all pages) -->
+	<script type="text/javascript" src="js/custom-scripts.js"></script>
+	<script type="text/javascript" src="js/custom-functions.js"></script>
+
+	<!-- script files (for this page) -->
+	<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="assets/flot/excanvas.min.js"></script><![endif]-->
+	<script type="text/javascript" src="assets/flot/jquery.flot.js"></script>
+	<script type="text/javascript" src="assets/flot/jquery.flot.time.js"></script>
+	<script type="text/javascript" src="assets/flot/jquery.flot.selection.js"></script>
+	<script type="text/javascript" src="assets/flot/jquery.flot.symbol.js"></script>
+	<script type="text/javascript" src="assets/flot/jquery.flot.threshold.js"></script>
+
+
+	<!-- inline custom script (for this page) -->
+	<script type="text/javascript">
+
+		/*** Flot chart 1 ****/
+		$(function() {
+
+			// We use an inline data source in the example, usually data would
+			// be fetched from a server
+			var data = [],
+				totalPoints = 300;
+
+			function getRandomData() {
+
+				if (data.length > 0)
+					data = data.slice(1);
+
+				// Do a random walk
+				while (data.length < totalPoints) {
+
+					var prev = data.length > 0 ? data[data.length - 1] : 50,
+						y = prev + Math.random() * 10 - 5;
+
+					if (y < 0) {
+						y = 0;
+					} else if (y > 100) {
+						y = 100;
+					}
+
+					data.push(y);
+				}
+
+				// Zip the generated y values with the x values
+				var res = [];
+				for (var i = 0; i < data.length; ++i) {
+					res.push([i, data[i]])
+				}
+
+				return res;
+			}
+
+			// Set up the control widget
+			var updateInterval = 30;
+			$("#updateInterval").val(updateInterval).change(function () {
+				var v = $(this).val();
+				if (v && !isNaN(+v)) {
+					updateInterval = +v;
+					if (updateInterval < 1) {
+						updateInterval = 1;
+					} else if (updateInterval > 2000) {
+						updateInterval = 2000;
+					}
+					$(this).val("" + updateInterval);
+				}
+			});
+
+			var plot = $.plot("#flot_1", [ getRandomData() ], {
+				series: {
+					shadowSize: 3,	// Drawing is faster without shadows
+					lines: { fill: true, fillColor: "rgba(0, 0, 255, 0.3)" },
+    			},
+				yaxis: {
+					min: 0,
+					max: 100
+				},
+				xaxis: {
+					show: false
+				}
+			});
+
+			function update() {
+
+				plot.setData([getRandomData()]);
+
+				// Since the axes don't change, we don't need to call plot.setupGrid()
+				plot.draw();
+				setTimeout(update, updateInterval);
+			}
+
+			update();
+		});
+		/**** Flot chart 1 ****/
+
+
+
+		/*** Flot chart 2 (symbols) ****/
+		$(function() {
+
+			function generate(offset, amplitude) {
+
+				var res = [];
+				var start = 0, end = 10;
+
+				for (var i = 0; i <= 50; ++i) {
+					var x = start + i / 50 * (end - start);
+					res.push([x, amplitude * Math.sin(x + offset)]);
+				}
+
+				return res;
+			}
+
+			var data = [
+				{ data: generate(2, 1.8), points: { symbol: "circle" } },
+				{ data: generate(3, 1.5), points: { symbol: "square" } },
+				{ data: generate(4, 0.9), points: { symbol: "diamond" } },
+				{ data: generate(6, 1.4), points: { symbol: "triangle" } },
+				{ data: generate(7, 1.1), points: { symbol: "cross" } }
+			];
+
+			$.plot("#canvas1", data, {
+				series: {
+					points: {
+						show: true,
+						radius: 3
+					}
+				},
+				grid: {
+					hoverable: true
+				}
+			});
+		});
+		/**** Flot chart 2 (symbols) ****/
+
+
+
+		/*** Flot chart 3 (Visitors) ****/
+		$(function() {
+
+			var d1 = [];
+			for (var i = 0; i <= 60; i += 1) {
+				d1.push([i, parseInt(Math.random() * 30 - 10)]);
+			}
+
+			function plotWithOptions(t) {
+				$.plot("#threshold", [{
+					data: d1,
+					color: "rgb(30, 180, 20)",
+					threshold: {
+						below: t,
+						color: "rgb(200, 20, 30)"
+					},
+					lines: {
+						steps: true
+					}
+				}]);
+			}
+
+			plotWithOptions(0);
+
+			$(".controls button").click(function (e) {
+				e.preventDefault();
+				var t = $(this).attr("data");
+				plotWithOptions(t);
+			});
+		});
+		/**** Flot chart 3 (Visitors) ****/
+
+
+
+		/*** Flot chart 4 (series) ****/
+		$(function() {
+
+			var d1 = [];
+			for (var i = 0; i < 14; i += 0.5) {
+				d1.push([i, Math.sin(i)]);
+			}
+
+			var d2 = [[0, 3], [4, 8], [8, 5], [9, 13]];
+
+			var d3 = [];
+			for (var i = 0; i < 14; i += 0.5) {
+				d3.push([i, Math.cos(i)]);
+			}
+
+			var d4 = [];
+			for (var i = 0; i < 14; i += 0.1) {
+				d4.push([i, Math.sqrt(i * 10)]);
+			}
+
+			var d5 = [];
+			for (var i = 0; i < 14; i += 0.5) {
+				d5.push([i, Math.sqrt(i)]);
+			}
+
+			var d6 = [];
+			for (var i = 0; i < 14; i += 0.5 + Math.random()) {
+				d6.push([i, Math.sqrt(2*i + Math.sin(i) + 5)]);
+			}
+
+			$.plot("#series1", [{
+				data: d1,
+				lines: { show: true, fill: true }
+			}, {
+				data: d2,
+				bars: { show: true }
+			}, {
+				data: d3,
+				points: { show: true }
+			}, {
+				data: d4,
+				lines: { show: true }
+			}, {
+				data: d5,
+				lines: { show: true },
+				points: { show: true }
+			}, {
+				data: d6,
+				lines: { show: true, steps: true }
+			}]);
+		});
+		/**** Flot chart 4 (series) ****/
+
+
+	</script>
+</body>
+
+<!-- Mirrored from kajdook.com/dialog/v1.5/chart-flot.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Jul 2022 17:59:40 GMT -->
+</html>

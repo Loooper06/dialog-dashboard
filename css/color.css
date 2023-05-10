@@ -1,0 +1,738 @@
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ * -=-=-=-=-=-=- Blue color
+ * -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+	/* background color only */
+	body#blue .bg-themecolor,
+	body#blue .form-check-input[type="checkbox"]:checked,
+	body#blue .form-check-input[type="radio"]:checked::after,
+	body#blue jdp-container .jdp-day.selected,
+	body#blue jdp-container .jdp-day-name.selected,
+	body#blue jdp-container .jdp-btn-today,
+	body#blue jdp-container .jdp-btn-empty,
+	body#blue .modern.nav-tabs > li > a::after {
+		background: #3d5afe;
+	}
+	/* text color only */
+	body#blue .text-themecolor,
+	body#blue .link-themecolor,
+	body#blue #acc1 .shown,
+	body#blue .btn-outline-themecolor,
+	body#blue .btn.modern,
+	body#blue input.new:checked + label:after,
+	body#blue .todo li.todo-done:after,
+	body#blue .lastcomments .coment-action,
+	body#blue .accordion-button:not(.collapsed),
+	body#blue .wizard > .steps .current a,
+	body#blue #menu_hor li.active > a,
+	body#blue #side_panel .board-nav a.active {
+		color: #3d5afe;
+	}
+	/* background with text color */
+	body#blue .bgtxt-themecolor,
+	body#blue .btn-themecolor,
+	body#blue #menu_ver li.active > a,
+	body#blue .wizard > .actions a,
+	body#blue .wizard > .actions a:hover,
+	body#blue .wizard > .actions a:active,
+	body#blue .btn.modern:hover,
+	body#blue .btn.modern:focus,
+	body#blue .btn.modern:active,
+	body#blue .btn.modern.active,
+	body#blue .page-item.active .page-link,
+	body#blue .btn-check:active + .btn-outline-themecolor,
+	body#blue .btn-check:checked + .btn-outline-themecolor,
+	body#blue .open > .btn.modern.dropdown-toggle,
+	body#blue #nav li a.active,
+	body#blue table.zigzag th,
+	body#blue #progressbar li.active:before,
+	body#blue #progressbar li.active:after {
+		background-color: #3d5afe;
+		color: #fff;
+	}
+	/* border color only */
+	body#blue .border-themecolor,
+	body#blue #acc1 > ul,
+	body#blue .btn.modern,
+	body#blue .form-check-input:checked,
+	body#blue .btn-check:active + .btn-outline-themecolor,
+	body#blue .btn-check:checked + .btn-outline-themecolor,
+	body#blue .form-select:focus,
+	body#blue .form-control:focus,
+	body#blue #nav li a:hover,
+	body#blue .wizard > .content > .body input,
+	body#blue .dashboard-tickets .overview,
+	body#blue #msform fieldset > input:focus,
+	body#blue #msform .box > input:focus,
+	body#blue #msform fieldset > textarea:focus {
+		border-color: #3d5afe;
+	}
+	/* gradiant */
+	body#blue .page-loading,
+	body#blue .dashboard-tickets i {
+		background: linear-gradient(40deg,#5972ff,#3d5afe);
+	}
+
+	/* other colors */
+	body#blue .link-themecolor:hover {
+		color: #1638f4;
+	}
+	body#blue #top_panel .help-text .description {
+		background: #dbdff9;
+		color: #3d5afe;
+	}
+	body#blue .wizard > .content {
+		box-shadow:  0 0 6px #3d5afe80;
+	}
+	body#blue #msform .action-button:hover,
+	body#blue #msform .action-button:focus {
+		box-shadow: 0 0 0 2px white, 0 0 0 3px #3d5afe;
+	}
+
+
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ * -=-=-=-=-=-=- Purple color
+ * -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+	/* background color only */
+	body#purple .bg-themecolor,
+	body#purple .form-check-input[type="checkbox"]:checked,
+	body#purple .form-check-input[type="radio"]:checked::after,
+	body#purple jdp-container .jdp-day.selected,
+	body#purple jdp-container .jdp-day-name.selected,
+	body#purple jdp-container .jdp-btn-today,
+	body#purple jdp-container .jdp-btn-empty,
+	body#purple .modern.nav-tabs > li > a::after {
+		background: #d500f9;
+	}
+	/* text color only */
+	body#purple .text-themecolor,
+	body#purple .link-themecolor,
+	body#purple #acc1 .shown,
+	body#purple .btn-outline-themecolor,
+	body#purple .btn.modern,
+	body#purple input.new:checked + label:after,
+	body#purple .todo li.todo-done:after,
+	body#purple .lastcomments .coment-action,
+	body#purple .accordion-button:not(.collapsed),
+	body#purple .wizard > .steps .current a,
+	body#purple #menu_hor li.active > a,
+	body#purple #side_panel .board-nav a.active {
+		color: #d500f9;
+	}
+	/* background with text color */
+	body#purple .bgtxt-themecolor,
+	body#purple .btn-themecolor,
+	body#purple #menu_ver li.active > a,
+	body#purple .wizard > .actions a,
+	body#purple .wizard > .actions a:hover,
+	body#purple .wizard > .actions a:active,
+	body#purple .btn.modern:hover,
+	body#purple .btn.modern:focus,
+	body#purple .btn.modern:active,
+	body#purple .btn.modern.active,
+	body#purple .page-item.active .page-link,
+	body#purple .btn-check:active + .btn-outline-themecolor,
+	body#purple .btn-check:checked + .btn-outline-themecolor,
+	body#purple .open > .btn.modern.dropdown-toggle,
+	body#purple #nav li a.active,
+	body#purple table.zigzag th,
+	body#purple #progressbar li.active:before,
+	body#purple #progressbar li.active:after {
+		background-color: #d500f9;
+		color: #fff;
+	}
+	/* border color only */
+	body#purple .border-themecolor,
+	body#purple #acc1 > ul,
+	body#purple .btn.modern,
+	body#purple .form-check-input:checked,
+	body#purple .btn-check:active + .btn-outline-themecolor,
+	body#purple .btn-check:checked + .btn-outline-themecolor,
+	body#purple .form-select:focus,
+	body#purple .form-control:focus,
+	body#purple #nav li a:hover,
+	body#purple .wizard > .content > .body input,
+	body#purple .dashboard-tickets .overview,
+	body#purple #msform fieldset > input:focus,
+	body#purple #msform .box > input:focus,
+	body#purple #msform fieldset > textarea:focus {
+		border-color: #d500f9;
+	}
+	/* gradiant */
+	body#purple .page-loading,
+	body#purple .dashboard-tickets i {
+		background: linear-gradient(300deg,#c016fd,#d500f9);
+	}
+
+	/* other colors */
+	body#purple .link-themecolor:hover {
+		color: #b800d7;
+	}
+	body#purple #top_panel .help-text .description {
+		background: #faddff;
+		color: #d500f9;
+	}
+	body#purple .wizard > .content {
+		box-shadow:  0 0 6px #d500f980;
+	}
+	body#purple #msform .action-button:hover,
+	body#purple #msform .action-button:focus {
+		box-shadow: 0 0 0 2px white, 0 0 0 3px #d500f9;
+	}
+
+
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ * -=-=-=-=-=-=- Pink color
+ * -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+	/* background color only */
+	body#pink .bg-themecolor,
+	body#pink .form-check-input[type="checkbox"]:checked,
+	body#pink .form-check-input[type="radio"]:checked::after,
+	body#pink jdp-container .jdp-day.selected,
+	body#pink jdp-container .jdp-day-name.selected,
+	body#pink jdp-container .jdp-btn-today,
+	body#pink jdp-container .jdp-btn-empty,
+	body#pink .modern.nav-tabs > li > a::after {
+		background: #f50057;
+	}
+	/* text color only */
+	body#pink .text-themecolor,
+	body#pink .link-themecolor,
+	body#pink #acc1 .shown,
+	body#pink .btn-outline-themecolor,
+	body#pink .btn.modern,
+	body#pink input.new:checked + label:after,
+	body#pink .todo li.todo-done:after,
+	body#pink .lastcomments .coment-action,
+	body#pink .accordion-button:not(.collapsed),
+	body#pink .wizard > .steps .current a,
+	body#pink #menu_hor li.active > a,
+	body#pink #side_panel .board-nav a.active {
+		color: #f50057;
+	}
+	/* background with text color */
+	body#pink .bgtxt-themecolor,
+	body#pink .btn-themecolor,
+	body#pink #menu_ver li.active > a,
+	body#pink .wizard > .actions a,
+	body#pink .wizard > .actions a:hover,
+	body#pink .wizard > .actions a:active,
+	body#pink .btn.modern:hover,
+	body#pink .btn.modern:focus,
+	body#pink .btn.modern:active,
+	body#pink .btn.modern.active,
+	body#pink .page-item.active .page-link,
+	body#pink .btn-check:active + .btn-outline-themecolor,
+	body#pink .btn-check:checked + .btn-outline-themecolor,
+	body#pink .open > .btn.modern.dropdown-toggle,
+	body#pink #nav li a.active,
+	body#pink table.zigzag th,
+	body#pink #progressbar li.active:before,
+	body#pink #progressbar li.active:after {
+		background-color: #f50057;
+		color: #fff;
+	}
+	/* border color only */
+	body#pink .border-themecolor,
+	body#pink #acc1 > ul,
+	body#pink .btn.modern,
+	body#pink .form-check-input:checked,
+	body#pink .btn-check:active + .btn-outline-themecolor,
+	body#pink .btn-check:checked + .btn-outline-themecolor,
+	body#pink .form-select:focus,
+	body#pink .form-control:focus,
+	body#pink #nav li a:hover,
+	body#pink .wizard > .content > .body input,
+	body#pink .dashboard-tickets .overview,
+	body#pink #msform fieldset > input:focus,
+	body#pink #msform .box > input:focus,
+	body#pink #msform fieldset > textarea:focus {
+		border-color: #f50057;
+	}
+	/* gradiant */
+	body#pink .page-loading,
+	body#pink .dashboard-tickets i {
+		background: linear-gradient(300deg,#ff4c8c,#f50057);
+	}
+
+	/* other colors */
+	body#pink .link-themecolor:hover {
+		color: #d5024d;
+	}
+	body#pink #top_panel .help-text .description {
+		background: #ffbfd4;
+		color: #f50057;
+	}
+	body#pink .wizard > .content {
+		box-shadow:  0 0 6px #f5005780;
+	}
+	body#pink #msform .action-button:hover,
+	body#pink #msform .action-button:focus {
+		box-shadow: 0 0 0 2px white, 0 0 0 3px #f50057;
+	}
+
+
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ * -=-=-=-=-=-=- Green color
+ * -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+	/* background color only */
+	body#green .bg-themecolor,
+	body#green .form-check-input[type="checkbox"]:checked,
+	body#green .form-check-input[type="radio"]:checked::after,
+	body#green jdp-container .jdp-day.selected,
+	body#green jdp-container .jdp-day-name.selected,
+	body#green jdp-container .jdp-btn-today,
+	body#green jdp-container .jdp-btn-empty,
+	body#green .modern.nav-tabs > li > a::after {
+		background: #00897B;
+	}
+	/* text color only */
+	body#green .text-themecolor,
+	body#green .link-themecolor,
+	body#green #acc1 .shown,
+	body#green .btn-outline-themecolor,
+	body#green .btn.modern,
+	body#green input.new:checked + label:after,
+	body#green .todo li.todo-done:after,
+	body#green .lastcomments .coment-action,
+	body#green .accordion-button:not(.collapsed),
+	body#green .wizard > .steps .current a,
+	body#green #menu_hor li.active > a,
+	body#green #side_panel .board-nav a.active {
+		color: #00897B;
+	}
+	/* background with text color */
+	body#green .bgtxt-themecolor,
+	body#green .btn-themecolor,
+	body#green #menu_ver li.active > a,
+	body#green .wizard > .actions a,
+	body#green .wizard > .actions a:hover,
+	body#green .wizard > .actions a:active,
+	body#green .btn.modern:hover,
+	body#green .btn.modern:focus,
+	body#green .btn.modern:active,
+	body#green .btn.modern.active,
+	body#green .page-item.active .page-link,
+	body#green .btn-check:active + .btn-outline-themecolor,
+	body#green .btn-check:checked + .btn-outline-themecolor,
+	body#green .open > .btn.modern.dropdown-toggle,
+	body#green #nav li a.active,
+	body#green table.zigzag th,
+	body#green #progressbar li.active:before,
+	body#green #progressbar li.active:after {
+		background-color: #00897B;
+		color: #fff;
+	}
+	/* border color only */
+	body#green .border-themecolor,
+	body#green #acc1 > ul,
+	body#green .btn.modern,
+	body#green .form-check-input:checked,
+	body#green .btn-check:active + .btn-outline-themecolor,
+	body#green .btn-check:checked + .btn-outline-themecolor,
+	body#green .form-select:focus,
+	body#green .form-control:focus,
+	body#green #nav li a:hover,
+	body#green .wizard > .content > .body input,
+	body#green .dashboard-tickets .overview,
+	body#green #msform fieldset > input:focus,
+	body#green #msform .box > input:focus,
+	body#green #msform fieldset > textarea:focus {
+		border-color: #00897B;
+	}
+	/* gradiant */
+	body#green .page-loading,
+	body#green .dashboard-tickets i {
+		background: linear-gradient(300deg,#009989,#00897B);
+	}
+
+	/* other colors */
+	body#green .link-themecolor:hover {
+		color: #077340;
+	}
+	body#green #top_panel .help-text .description {
+		background: #e0ffee;
+		color: #00897B;
+	}
+	body#green .wizard > .content {
+		box-shadow:  0 0 6px #00897B80;
+	}
+	body#green #msform .action-button:hover,
+	body#green #msform .action-button:focus {
+		box-shadow: 0 0 0 2px white, 0 0 0 3px #00897B;
+	}
+
+
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ * -=-=-=-=-=-=- Orange color
+ * -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+	/* background color only */
+	body#orange .bg-themecolor,
+	body#orange .form-check-input[type="checkbox"]:checked,
+	body#orange .form-check-input[type="radio"]:checked::after,
+	body#orange jdp-container .jdp-day.selected,
+	body#orange jdp-container .jdp-day-name.selected,
+	body#orange jdp-container .jdp-btn-today,
+	body#orange jdp-container .jdp-btn-empty,
+	body#orange .modern.nav-tabs > li > a::after {
+		background: #FF3D00;
+	}
+	/* text color only */
+	body#orange .text-themecolor,
+	body#orange .link-themecolor,
+	body#orange #acc1 .shown,
+	body#orange .btn-outline-themecolor,
+	body#orange .btn.modern,
+	body#orange input.new:checked + label:after,
+	body#orange .todo li.todo-done:after,
+	body#orange .lastcomments .coment-action,
+	body#orange .accordion-button:not(.collapsed),
+	body#orange .wizard > .steps .current a,
+	body#orange #menu_hor li.active > a,
+	body#orange #side_panel .board-nav a.active {
+		color: #FF3D00;
+	}
+	/* background with text color */
+	body#orange .bgtxt-themecolor,
+	body#orange .btn-themecolor,
+	body#orange #menu_ver li.active > a,
+	body#orange .wizard > .actions a,
+	body#orange .wizard > .actions a:hover,
+	body#orange .wizard > .actions a:active,
+	body#orange .btn.modern:hover,
+	body#orange .btn.modern:focus,
+	body#orange .btn.modern:active,
+	body#orange .btn.modern.active,
+	body#orange .page-item.active .page-link,
+	body#orange .btn-check:active + .btn-outline-themecolor,
+	body#orange .btn-check:checked + .btn-outline-themecolor,
+	body#orange .open > .btn.modern.dropdown-toggle,
+	body#orange #nav li a.active,
+	body#orange table.zigzag th,
+	body#orange #progressbar li.active:before,
+	body#orange #progressbar li.active:after {
+		background-color: #FF3D00;
+		color: #fff;
+	}
+	/* border color only */
+	body#orange .border-themecolor,
+	body#orange #acc1 > ul,
+	body#orange .btn.modern,
+	body#orange .form-check-input:checked,
+	body#orange .btn-check:active + .btn-outline-themecolor,
+	body#orange .btn-check:checked + .btn-outline-themecolor,
+	body#orange .form-select:focus,
+	body#orange .form-control:focus,
+	body#orange #nav li a:hover,
+	body#orange .wizard > .content > .body input,
+	body#orange .dashboard-tickets .overview,
+	body#orange #msform fieldset > input:focus,
+	body#orange #msform .box > input:focus,
+	body#orange #msform fieldset > textarea:focus {
+		border-color: #FF3D00;
+	}
+	/* gradiant */
+	body#orange .page-loading,
+	body#orange .dashboard-tickets i {
+		background: linear-gradient(300deg,#ff5b27,#FF3D00);
+	}
+
+	/* other colors */
+	body#orange .link-themecolor:hover {
+		color: #d03200;
+	}
+	body#orange #top_panel .help-text .description {
+		background: #ffd7ca;
+		color: #FF3D00;
+	}
+	body#orange .wizard > .content {
+		box-shadow:  0 0 6px #FF3D0080;
+	}
+	body#orange #msform .action-button:hover,
+	body#orange #msform .action-button:focus {
+		box-shadow: 0 0 0 2px white, 0 0 0 3px #FF3D00;
+	}
+
+
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ * -=-=-=-=-=-=- Yellow color
+ * -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+	/* background color only */
+	body#yellow .bg-themecolor,
+	body#yellow .form-check-input[type="checkbox"]:checked,
+	body#yellow .form-check-input[type="radio"]:checked::after,
+	body#yellow jdp-container .jdp-day.selected,
+	body#yellow jdp-container .jdp-day-name.selected,
+	body#yellow jdp-container .jdp-btn-today,
+	body#yellow jdp-container .jdp-btn-empty,
+	body#yellow .modern.nav-tabs > li > a::after {
+		background: #fbb400;
+	}
+	/* text color only */
+	body#yellow .text-themecolor,
+	body#yellow .link-themecolor,
+	body#yellow #acc1 .shown,
+	body#yellow .btn-outline-themecolor,
+	body#yellow .btn.modern,
+	body#yellow input.new:checked + label:after,
+	body#yellow .todo li.todo-done:after,
+	body#yellow .lastcomments .coment-action,
+	body#yellow .accordion-button:not(.collapsed),
+	body#yellow .wizard > .steps .current a,
+	body#yellow #menu_hor li.active > a,
+	body#yellow #side_panel .board-nav a.active {
+		color: #fbb400;
+	}
+	/* background with text color */
+	body#yellow .bgtxt-themecolor,
+	body#yellow .btn-themecolor,
+	body#yellow #menu_ver li.active > a,
+	body#yellow .wizard > .actions a,
+	body#yellow .wizard > .actions a:hover,
+	body#yellow .wizard > .actions a:active,
+	body#yellow .btn.modern:hover,
+	body#yellow .btn.modern:focus,
+	body#yellow .btn.modern:active,
+	body#yellow .btn.modern.active,
+	body#yellow .page-item.active .page-link,
+	body#yellow .btn-check:active + .btn-outline-themecolor,
+	body#yellow .btn-check:checked + .btn-outline-themecolor,
+	body#yellow .open > .btn.modern.dropdown-toggle,
+	body#yellow #nav li a.active,
+	body#yellow table.zigzag th,
+	body#yellow #progressbar li.active:before,
+	body#yellow #progressbar li.active:after {
+		background-color: #fbb400;
+		color: #222222;
+	}
+	/* border color only */
+	body#yellow .border-themecolor,
+	body#yellow #acc1 > ul,
+	body#yellow .btn.modern,
+	body#yellow .form-check-input:checked,
+	body#yellow .btn-check:active + .btn-outline-themecolor,
+	body#yellow .btn-check:checked + .btn-outline-themecolor,
+	body#yellow .form-select:focus,
+	body#yellow .form-control:focus,
+	body#yellow #nav li a:hover,
+	body#yellow .wizard > .content > .body input,
+	body#yellow .dashboard-tickets .overview,
+	body#yellow #msform fieldset > input:focus,
+	body#yellow #msform .box > input:focus,
+	body#yellow #msform fieldset > textarea:focus {
+		border-color: #fbb400;
+	}
+	/* gradiant */
+	body#yellow .page-loading,
+	body#yellow .dashboard-tickets i {
+		background: linear-gradient(300deg,#d99f0a,#fbb400);
+	}
+
+	/* other colors */
+	body#yellow .link-themecolor:hover {
+		color: #dfa40d;
+	}
+	body#yellow #top_panel .help-text .description {
+		background: #664900;
+		color: #fbb400;
+	}
+	body#yellow .wizard > .content {
+		box-shadow:  0 0 6px #fbb40080;
+	}
+	body#yellow #msform .action-button:hover,
+	body#yellow #msform .action-button:focus {
+		box-shadow: 0 0 0 2px white, 0 0 0 3px #fbb400;
+	}
+
+
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ * -=-=-=-=-=-=- Black color
+ * -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+	/* background color only */
+	body#black .bg-themecolor,
+	body#black .form-check-input[type="checkbox"]:checked,
+	body#black .form-check-input[type="radio"]:checked::after,
+	body#black jdp-container .jdp-day.selected,
+	body#black jdp-container .jdp-day-name.selected,
+	body#black jdp-container .jdp-btn-today,
+	body#black jdp-container .jdp-btn-empty,
+	body#black .modern.nav-tabs > li > a::after {
+		background: #333333;
+	}
+	/* text color only */
+	body#black .text-themecolor,
+	body#black .link-themecolor,
+	body#black #acc1 .shown,
+	body#black .btn-outline-themecolor,
+	body#black .btn.modern,
+	body#black input.new:checked + label:after,
+	body#black .todo li.todo-done:after,
+	body#black .lastcomments .coment-action,
+	body#black .accordion-button:not(.collapsed),
+	body#black .wizard > .steps .current a,
+	body#black #menu_hor li.active > a,
+	body#black #side_panel .board-nav a.active {
+		color: #333333;
+	}
+	/* background with text color */
+	body#black .bgtxt-themecolor,
+	body#black .btn-themecolor,
+	body#black #menu_ver li.active > a,
+	body#black .wizard > .actions a,
+	body#black .wizard > .actions a:hover,
+	body#black .wizard > .actions a:active,
+	body#black .btn.modern:hover,
+	body#black .btn.modern:focus,
+	body#black .btn.modern:active,
+	body#black .btn.modern.active,
+	body#black .page-item.active .page-link,
+	body#black .btn-check:active + .btn-outline-themecolor,
+	body#black .btn-check:checked + .btn-outline-themecolor,
+	body#black .open > .btn.modern.dropdown-toggle,
+	body#black #nav li a.active,
+	body#black table.zigzag th,
+	body#black #progressbar li.active:before,
+	body#black #progressbar li.active:after {
+		background-color: #333333;
+		color: #fff;
+	}
+	/* border color only */
+	body#black .border-themecolor,
+	body#black #acc1 > ul,
+	body#black .btn.modern,
+	body#black .form-check-input:checked,
+	body#black .btn-check:active + .btn-outline-themecolor,
+	body#black .btn-check:checked + .btn-outline-themecolor,
+	body#black .form-select:focus,
+	body#black .form-control:focus,
+	body#black #nav li a:hover,
+	body#black .wizard > .content > .body input,
+	body#black .dashboard-tickets .overview,
+	body#black #msform fieldset > input:focus,
+	body#black #msform .box > input:focus,
+	body#black #msform fieldset > textarea:focus {
+		border-color: #333333;
+	}
+	/* gradiant */
+	body#black .page-loading,
+	body#black .dashboard-tickets i {
+		background: linear-gradient(300deg,#535353,#333333);
+	}
+
+	/* other colors */
+	body#black .link-themecolor:hover {
+		color: #111111;
+	}
+	body#black #top_panel .help-text .description {
+		background: #cccccc;
+		color: #333333;
+	}
+	body#black .wizard > .content {
+		box-shadow:  0 0 6px #33333380;
+	}
+	body#black #msform .action-button:hover,
+	body#black #msform .action-button:focus {
+		box-shadow: 0 0 0 2px white, 0 0 0 3px #333333;
+	}
+
+
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ * -=-=-=-=-=-=- Indigo color
+ * -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+	/* background color only */
+	body#indigo .bg-themecolor,
+	body#indigo .form-check-input[type="checkbox"]:checked,
+	body#indigo .form-check-input[type="radio"]:checked::after,
+	body#indigo jdp-container .jdp-day.selected,
+	body#indigo jdp-container .jdp-day-name.selected,
+	body#indigo jdp-container .jdp-btn-today,
+	body#indigo jdp-container .jdp-btn-empty,
+	body#indigo .modern.nav-tabs > li > a::after {
+		background: #6200ee;
+	}
+	/* text color only */
+	body#indigo .text-themecolor,
+	body#indigo .link-themecolor,
+	body#indigo #acc1 .shown,
+	body#indigo .btn-outline-themecolor,
+	body#indigo .btn.modern,
+	body#indigo input.new:checked + label:after,
+	body#indigo .todo li.todo-done:after,
+	body#indigo .lastcomments .coment-action,
+	body#indigo .accordion-button:not(.collapsed),
+	body#indigo .wizard > .steps .current a,
+	body#indigo #menu_hor li.active > a,
+	body#indigo #side_panel .board-nav a.active {
+		color: #6200ee;
+	}
+	/* background with text color */
+	body#indigo .bgtxt-themecolor,
+	body#indigo .btn-themecolor,
+	body#indigo #menu_ver li.active > a,
+	body#indigo .wizard > .actions a,
+	body#indigo .wizard > .actions a:hover,
+	body#indigo .wizard > .actions a:active,
+	body#indigo .btn.modern:hover,
+	body#indigo .btn.modern:focus,
+	body#indigo .btn.modern:active,
+	body#indigo .btn.modern.active,
+	body#indigo .page-item.active .page-link,
+	body#indigo .btn-check:active + .btn-outline-themecolor,
+	body#indigo .btn-check:checked + .btn-outline-themecolor,
+	body#indigo .open > .btn.modern.dropdown-toggle,
+	body#indigo #nav li a.active,
+	body#indigo table.zigzag th,
+	body#indigo #progressbar li.active:before,
+	body#indigo #progressbar li.active:after {
+		background-color: #6200ee;
+		color: #fff;
+	}
+	/* border color only */
+	body#indigo .border-themecolor,
+	body#indigo #acc1 > ul,
+	body#indigo .btn.modern,
+	body#indigo .form-check-input:checked,
+	body#indigo .btn-check:active + .btn-outline-themecolor,
+	body#indigo .btn-check:checked + .btn-outline-themecolor,
+	body#indigo .form-select:focus,
+	body#indigo .form-control:focus,
+	body#indigo #nav li a:hover,
+	body#indigo .wizard > .content > .body input,
+	body#indigo .dashboard-tickets .overview,
+	body#indigo #msform fieldset > input:focus,
+	body#indigo #msform .box > input:focus,
+	body#indigo #msform fieldset > textarea:focus {
+		border-color: #6200ee;
+	}
+	/* gradiant */
+	body#indigo .page-loading,
+	body#indigo .dashboard-tickets i {
+		background: linear-gradient(300deg,#7e24ff,#6200ee);
+	}
+
+	/* other colors */
+	body#indigo .link-themecolor:hover {
+		color: #8631ff;
+	}
+	body#indigo #top_panel .help-text .description {
+		background: #c9aaf4;
+		color: #6200ee;
+	}
+	body#indigo .wizard > .content {
+		box-shadow:  0 0 6px #6200ee80;
+	}
+	body#indigo #msform .action-button:hover,
+	body#indigo #msform .action-button:focus {
+		box-shadow: 0 0 0 2px white, 0 0 0 3px #6200ee;
+	}
+
+
+
+

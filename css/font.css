@@ -1,0 +1,86 @@
+
+/* important font files */
+@font-face {
+	font-family: 'vazir';
+	font-weight: 300;
+	src: url(../fonts/vazir/Vazir-Thin.eot);
+	src: url(../fonts/vazir/Vazir-Thin.ttf),
+		 url(../fonts/vazir/Vazir-Thin.woff),
+		 url(../fonts/vazir/Vazir-Thin.woff2);
+}
+@font-face {
+	font-family: 'vazir';
+	font-weight: 400;
+	src: url(../fonts/vazir/Vazir-Light.eot);
+	src: url(../fonts/vazir/Vazir-Light.ttf),
+		 url(../fonts/vazir/Vazir-Light.woff),
+		 url(../fonts/vazir/Vazir-Light.woff2);
+}
+@font-face {
+	font-family: 'vazir';
+	font-weight: 500;
+	src: url(../fonts/vazir/Vazir-Regular.eot);
+	src: url(../fonts/vazir/Vazir-Regular.ttf),
+		 url(../fonts/vazir/Vazir-Regular.woff),
+		 url(../fonts/vazir/Vazir-Regular.woff2);
+}
+@font-face {
+	font-family: 'vazir';
+	font-weight: 600;
+	src: url(../fonts/vazir/Vazir-Medium.eot);
+	src: url(../fonts/vazir/Vazir-Medium.ttf),
+		 url(../fonts/vazir/Vazir-Medium.woff),
+		 url(../fonts/vazir/Vazir-Medium.woff2);
+}
+@font-face {
+	font-family: 'vazir';
+	font-weight: 700;
+	src: url(../fonts/vazir/Vazir-Bold.eot);
+	src: url(../fonts/vazir/Vazir-Bold.ttf),
+		 url(../fonts/vazir/Vazir-Bold.woff),
+		 url(../fonts/vazir/Vazir-Bold.woff2);
+}
+@font-face {
+	font-family: 'vazir';
+	font-weight: 800;
+	src: url(../fonts/vazir/Vazir-Black.eot);
+	src: url(../fonts/vazir/Vazir-Black.ttf),
+		 url(../fonts/vazir/Vazir-Black.woff),
+		 url(../fonts/vazir/Vazir-Black.woff2);
+}
+
+
+
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ * -=-=-=-=-=-=- all font-family set
+ * -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+**************************************************** */
+body,
+input, select, button, textarea,
+.tooltip, .popover, .introjs-tooltip
+{
+	font-family: 'vazir', tahoma;
+}
+
+.tox :not(svg):not(rect)
+{
+	font-family: 'vazir', tahoma !important;
+}
+
+.la {
+	font-family: 'Line Awesome Free', 'vazir';
+	vertical-align: middle;
+}
+
+.carousel-control-next-icon::after,
+.carousel-control-prev-icon::after {
+	font: 900 22px 'Line Awesome Free';
+}
+
+@media all {
+	.featherlight .featherlight-close-icon {
+		font-family: 'vazir', tahoma;
+	}
+}
+

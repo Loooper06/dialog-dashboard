@@ -1,0 +1,1715 @@
+﻿<!DOCTYPE html>
+<html lang="fa">
+
+<!-- Mirrored from kajdook.com/dialog/v1.5/form-ui.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Jul 2022 17:59:20 GMT -->
+<head>
+	<!-- Header meta tags -->
+	<meta charset="utf-8">
+	<title>دیالوگ - فرم ها</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Bootstrap and styles -->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<!-- Fav and touch icons -->
+	<link rel="shortcut icon" href="img/favicon/favicon.png">
+
+</head>
+
+<body id="blue" class="container-fluid"> <!-- please do not set id for body -->
+
+	<!-- loaders and alerts -->
+	<div class="page-loading">
+		<svg class="circular" height="50" width="50">
+			<circle class="path" cx="25" cy="25.2" r="19.9" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+		</svg>
+	</div>
+
+	<div id="wait" class="alert" style="display:none">
+		<i class="la la-spinner la-spin"></i>بارگذاری ...
+	</div>
+
+	<div id="ChangesSaved" class="alert" style="display:none">
+		<i class="la la-check"></i>ذخیره شد
+	</div>
+
+	<div id="lockscreen" style="display:none">
+		<i class="la la-lock"></i>برند
+		<p>اگر این برگه را رفرش کنید به برگه ورود منتقل خواهید شد.</p>
+	</div>
+
+
+
+	<!-- Main content -->
+	<section class="main_content clearfix">
+
+
+		<!-- Header and top nav -->
+		<header id="top-navbar">
+
+			<!-- Hidden top help panel -->
+			<div id="top_panel" class="t#333 container-fluid">
+				<div class="help-text b#fff row">
+					<div id="shortcut-help" class="col-md-3 d-none d-sm-block"> <!-- This id is for introjs tour -->
+						<h4>کلیدهای میانبر</h4>
+						<p>M - منو</p>
+						<p>R - پنل سمت چپ</p>
+						<p>T - پنل بالا</p>
+						<p>N - حالت شب</p>
+						<p>B - حالت جعبه ای</p>
+						<p>V - منوی عمودی</p>
+						<p>H - منوی افقی</p>
+						<p><strong>LOCK</strong> - برای <i class="la la-lock t#333"></i> یا <i class="la la-unlock t#333"></i></p>
+					</div>
+					
+					<div class="description col p-3">
+						<h4>توضیحات</h4>
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+						چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+						و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.<br/>
+						چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز<br/>
+						کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+					</div>
+				</div>
+			</div>
+			<!-- /End Hidden top help panel -->
+
+
+			<!-- Header buttons and navbar -->
+			<nav id="first-navbar" class="navbar navbar-expand-md">
+				<div class="container-fluid">
+
+					<div class="navbar-header">
+						<!-- Sidebar toggle button -->
+						<i id="sidebar_toggle" class="la la-outdent float-start" data-bs-placement="left" data-bs-toggle="tooltip" title="تغییر وضعیت منو"></i>
+						<!-- mobile and tablet -->
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav_1">
+							<i class="la la-bars la-2x"></i>
+						</button>
+
+						<!-- Side panel toggle -->
+						<i class="side_panel_toggle_1 la la-sliders la-2x float-end d-sm-block d-md-none"></i>
+					</div>
+
+					<div id="nav_1" class="collapse navbar-collapse ms-2">
+
+						<!-- navbar start buttons -->
+						<ul class="navbar-nav me-auto">
+
+							<!-- Mega menu -->
+							<li id="mega_menu_btn">
+								<a class="dropdown-toggle">
+									مگامنو
+								</a>
+								<div id="mega_menu">
+									<div class="row">
+										<ul class="col link">
+											<h4>لینک متنی</h4>
+											<li><a href="#">تماس با ما</a></li>
+											<li><a href="#">صفحه اصلی</a></li>
+											<li><a href="#">درباره ما</a></li>
+											<li><a href="#">محصولات ما</a></li>
+											<li><a href="#">وبلاگ</a></li>
+											<li><a href="#">دریافت اپلیکیشن</a></li>
+										</ul>
+
+										<ul class="col icon">
+											<h4>لینک به همراه آیکون</h4>
+											<li><a href="#"><i class="la la-user"></i>کاربران</a></li>
+											<li><a href="#"><i class="la la-forward"></i>محصولات</a></li>
+											<li><a href="#"><i class="la la-plus"></i>سود</a></li>
+											<li><a href="#"><i class="la la-commenting"></i>دیدگاه ها</a></li>
+											<li><a href="#"><i class="la la-server"></i>سرور</a></li>
+										</ul>
+
+										<ul class="col image">
+											<h4>لینک به همراه تصویر</h4>
+											<li><img src="img/other/avatar7.jpg" alt="بارگذاری نشد"><a href="#">جان</a></li>
+											<li><img src="img/other/avatar3.jpg" alt="بارگذاری نشد"><a href="#">جک</a></li>
+											<li><img src="img/other/avatar5.jpg" alt="بارگذاری نشد"><a href="#">جیم</a></li>
+										</ul>
+
+										<ul class="col custom">
+											<h4>محتوای دلخواه</h4>
+											<img src="img/1.jpg" alt="بارگذاری نشد">
+											لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+										</ul>
+									</div>
+								</div>
+							</li>
+							<!-- /End Mega menu -->
+
+							<!-- Panel manager -->
+							<li class="dropdown" id="find_panels">
+								<a class="dropdown-toggle" data-bs-toggle="dropdown">
+									مدیریت پنل
+								</a>
+								<ul class="dropdown-menu b%9" id="all_panels">
+									<!-- Fill with jQuery -->
+								</ul>
+							</li>
+							<!-- /End Panel manager -->
+
+							<!-- Scroll to -->
+							<li class="dropdown" id="scroll_to_panels">
+								<a class="dropdown-toggle" data-bs-toggle="dropdown">
+									رفتن به
+								</a>
+								<ul class="dropdown-menu b%9" id="panels_to_scroll">
+									<div class="dropmenu-header bgtxt-themecolor">
+										با کلیک روی لینک های زیر به پنل آن هدایت می شوید.
+									</div>
+									<!-- Fill with jQuery -->
+								</ul>
+							</li>
+							<!-- /End Scroll to -->
+
+							<!-- Creat new -->
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-bs-toggle="dropdown">
+									<i class="la la-plus"></i> افزودن
+								</a>
+								<ul class="dropdown-menu b%9">
+									<li><a class="dropdown-item" href="#"><i class="la la-barcode"></i> محصول</a></li>
+									<li><a class="dropdown-item" href="#"><i class="la la-edit"></i> نوشته</a></li>
+									<li><a class="dropdown-item" href="#"><i class="la la-user-plus"></i> کاربر</a></li>
+									<li><a class="dropdown-item" href="#"><i class="la la-ticket"></i> تیکت</a></li>
+									<li><a class="dropdown-item" href="#"><i class="la la-file"></i> فایل</a></li>
+									<li><a class="dropdown-item" href="#"><i class="la la-plug"></i> افزونه</a></li>
+								</ul>
+							</li>
+							<!-- /End Creat new -->
+						</ul>
+
+						<!-- navbar end buttons -->
+						<ul class="nav navbar-right">
+
+							<!-- profile dropdown menu -->
+							<li class="nav-item dropdown top-user-menu">
+								<a class="nav-link dropdown-toggle p-0" data-bs-toggle="dropdown">
+									<img src="img/other/admin.jpg">
+									<span class="badge bg-danger badge-dot"></span>
+								</a>
+								<ul class="dropdown-menu b%9">
+									<div class="row dropmenu-header bgtxt-themecolor">
+										<div class="col-4 p-0">
+											<img src="img/other/admin.jpg">
+										</div>
+										<div class="col pt-1">
+											<h6>آلبرت انیشتین</h6>
+											<span>حسابدار</span>
+										</div>
+									</div>
+									<li class="dropdown-item">
+										<a href="#">
+											<i class="la la-user"></i>مشخصات
+										</a>
+									</li>
+									<li class="dropdown-item">
+										<a href="#">
+											<i class="la la-edit"></i>ویرایش نمایه
+										</a>
+									</li>
+									<li class="dropdown-item">
+										<a href="#">
+											<i class="la la-inbox"></i>صندوق ورودی
+										</a>
+									</li>
+									<li class="dropdown-item">
+										<a href="#">
+											<i class="la la-envelope"></i>پیام ها
+										</a>
+									</li>
+									<li class="dropdown-item">
+										<a href="#">
+											<i class="la la-cog"></i>تنظیمات حساب
+										</a>
+									</li>
+									<li class="dropdown-item">
+										<a href="user-login1.html">
+											<i class="la la-sign-out"></i>خروج از سیستم
+										</a>
+									</li>
+								</ul>
+							</li>
+
+
+							<!-- Save options -->
+							<li id="save_options" data-bs-placement="bottom" data-bs-toggle="tooltip" title="ذخیره تنظیمات">
+								<i class="la la-save"></i>
+							</li>
+
+							<!-- Full screen -->
+							<li id="full_screen" data-bs-placement="bottom" data-bs-toggle="tooltip" title="تمام صفحه">
+								<i class="la la-window-maximize"></i>
+							</li>
+
+							<!-- Search form -->
+							<li>
+								<form>
+									<i class="la la-search"></i>
+									<input class="form-control" placeholder="کلمه کلیدی + اینتر" />
+								</form>
+							</li>
+
+							<!-- Top hidden panel -->
+							<li id="top_panel_slide" data-bs-placement="bottom" data-bs-toggle="tooltip" title="پنل راهنما">
+								<i class="la la-question-circle-o"></i>
+							</li>
+
+							<!-- Side panel toggle -->
+							<li class="side_panel_toggle_2 d-none d-md-block" data-bs-placement="right" data-bs-toggle="tooltip" title="پنل کناری">
+								<i class="la la-sliders"></i>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</nav>
+			<!-- End header buttons and navbar -->
+		</header>
+		<!-- /End header and top nav -->
+
+
+
+		<!-- side panel -->
+		<section id="side_panel" class="b#fff">
+
+			<div class="board">
+
+				<ul class="nav board-nav">
+
+					<li class="nav-item" role="presentation">
+						<a class="active" href="#options" data-bs-toggle="tab">
+							<span class="la la-lg la-cogs round-tabs" data-bs-toggle="tooltip" title="تنظیمات"></span>
+						</a>
+					</li>
+
+					<li class="nav-item" role="presentation" id="taskbtn">
+						<a href="#tasks" data-bs-toggle="tab">
+							<span class="la la-lg la-tasks round-tabs" data-bs-toggle="tooltip" title="کار ها"></span>
+						</a>
+					</li>
+
+					<li class="nav-item" role="presentation">
+						<a href="#chats" data-bs-toggle="tab">
+							<span class="la la-lg la-comments round-tabs" data-bs-toggle="tooltip" title="گفت و گوها"></span>
+							<span class="badge bg-danger blink chat-alert">12</span> 
+						</a>
+					</li>
+				</ul>
+
+				<div class="tab-content">
+
+					<!-- options tab -->
+					<div class="tab-pane active" id="options">
+						<ul class="list-group mb-4">
+
+							<h4 class="Montserrat-font">تنظیمات پوسته</h4>
+
+							<!-- font size -->
+							<li class="list-group-item fs-btn">
+								<span>اندازه فونت</span>
+								<i class="la la-plus-square fontsize float-end" id="larger"></i>
+								<i class="la la-minus-square fontsize float-end" id="smaller"></i>
+							</li>
+
+
+							<!-- theme color -->
+							<li class="list-group-item full-color-changer">
+								<p>رنگ کلی قالب</p>
+								<button data-color="blue" style="background: #3d5afe"></button>
+								<button data-color="purple" style="background: #d500f9"></button>
+								<button data-color="pink" style="background: #f50057"></button>
+								<button data-color="green" style="background: #00897B"></button>
+								<button data-color="orange" style="background: #FF3D00"></button>
+								<button data-color="yellow" style="background: #fbb400"></button>
+								<button data-color="indigo" style="background: #6200ee"></button>
+								<button data-color="black" style="background: #333333"></button>
+							</li>
+
+
+							<!-- menu color -->
+							<li class="list-group-item menu-color-changer">
+								<p>رنگ منو</p>
+								<button style="background: #555555; color: #ddd;"></button>
+								<button style="background: #ffffff; color: #535353;"></button>
+								<button style="background: #795548; color:#fff;"></button>
+								<button style="background: #546E7A; color:#fff;"></button>
+								<button style="background: linear-gradient(40deg,#0336ff,#ff0266); color:#fff;"></button>
+								<button style="background: linear-gradient(40deg,#03dac5,#6200ee); color:#fff;"></button>
+								<button style="background: linear-gradient(40deg,#0db2de,#005bea); color:#fff;"></button>
+								<button style="background: linear-gradient(40deg,#ffffff,#FFEB3B); color:#333;"></button>
+							</li>
+
+
+							<!-- background image -->
+							<li class="list-group-item d-grid gap-2">
+								<p class="mb-0">تصویر پس زمینه:</p>
+								<button id="patt_btn" class="btn btn-outline-themecolor round" data-bs-toggle="modal" data-bs-target="#PatternsModal">
+									نمایش الگوها
+								</button>
+							</li>
+
+
+							<!-- menu position -->
+							<li class="list-group-item">
+								موقعیت منو
+								<select id="m_orient" class="form-select form-select-sm option-select float-end">
+									<option value="vertical" selected>عمودی</option>
+									<option value="horizontal">افقی</option>
+								</select>
+							</li>
+
+
+							<!-- fixed top bar -->
+							<li class="list-group-item">
+								ثابت بودن نوار بالا
+								<div class="material-switch float-end">
+									<input id="topfix" type="checkbox" checked />
+									<label for="topfix" class="bg-primary"></label>
+								</div>
+							</li>
+
+
+							<!-- night mode -->
+							<li class="list-group-item">
+								حالت شب
+								<div class="material-switch float-end">
+									<input id="nightmode" type="checkbox"/>
+									<label for="nightmode" class="bg-warning"></label>
+								</div>
+							</li>
+
+
+							<!-- boxed layout -->
+							<li class="list-group-item">
+								طرح جعبه ای
+								<div class="material-switch float-end">
+									<input id="box_option" type="checkbox"/>
+									<label for="box_option" class="bg-success"></label>
+								</div>
+							</li>
+
+
+							<!-- Corners radius -->
+							<li class="list-group-item">
+								شعاع پنل ها:
+								<span id="corners_txt"></span>
+								<div id="corners_s" class="m-t-10"></div>
+							</li>
+
+
+							<!-- Sidebar width -->
+							<li class="list-group-item">
+								عرض ستون کناری:
+								<span id="side_width_txt"></span>
+								<div id="side_w_s" class="m-t-10"></div>
+							</li>
+
+						</ul>
+					</div>
+					<!-- /End options tab -->
+					
+					<!-- tasks tab -->
+					<div class="tab-pane" id="tasks">
+
+						<!-- projects progress bars -->
+						<ul class="list-group mb-2">
+							<li class="list-group-item">
+								<h4>آمار مفید</h4>
+							</li>
+							<li class="list-group-item">
+								<a href="#">پنل مدیریت 27%</a>
+								<!-- for usage of pr-bad and pr-good please open custom-functions.js -->
+								<div class="progress pr-good">
+									<div class="progress-bar progress-bar-striped" style="width: 27%"></div>
+								</div>
+								<a href="#">به روزرسانی ها 60%</a>
+								<div class="progress pr-good">
+									<div class="progress-bar progress-bar-striped" style="width: 60%"></div>
+								</div>
+								<a href="#">استفاده سی پی یو 90%</a>
+								<div class="progress pr-bad">
+									<div class="progress-bar progress-bar-striped" style="width: 90%"></div>
+								</div>
+								<a href="#">برنامه اندروید 85%</a>
+								<div class="progress pr-good">
+									<div class="progress-bar progress-bar-striped" style="width: 85%"></div>
+								</div>
+								<a href="#">افزایش حمله ها 10%</a>
+								<div class="progress pr-bad">
+									<div class="progress-bar progress-bar-striped" style="width: 10%"></div>
+								</div>
+								<a href="#">و بیشتر...</a>
+							</li>
+						</ul>
+
+						<!-- tasks list -->
+						<ul class="list-group">
+							<li class="list-group-item">
+								<h4>شما 6 کار دارید</h4>
+							</li>
+							<li class="list-group-item">
+								<p class="badge b#7a3">به روزرسانی افزونه</p>
+								<div class="side-task">
+									لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+								</div>
+							</li>
+							<li class="list-group-item">
+								<p class="badge b#239 t#f8e">مهمانی تولد</p>
+								<div class="side-task">
+									لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+								</div>
+							</li>
+							<li class="list-group-item">
+								<p class="badge b#192 t#bef">تیم توسعه دهنده</p>
+								<div class="side-task">
+									لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- /End tasks tab -->
+					
+					<!-- chat tab -->
+					<div class="tab-pane" id="chats">
+						<!-- chat tower -->
+						<div class="chat-tower b#fff">
+
+							<!-- chat header -->
+							<div class="tower-head b#fff t#7b7b7b">
+								<div class="float-start">
+									<span id="chat_header">انتخاب کنید</span>
+								</div>
+								<!-- chat buttons -->
+								<div class="float-end btn-group">
+
+									<!-- options for chat list -->
+									<div id="chats_btn" class="btn-group">
+										<button data-bs-toggle="dropdown"><i class="la la-cog"></i></button>
+										<ul role="menu" class="dropdown-menu float-end">
+											<li><a class="dropdown-item" href="#">من را آفلاین نشان بده</a></li>
+											<li><a class="dropdown-item" href="#">پاک کردن لیست</a></li>
+											<li><a class="dropdown-item" href="#">برون بری لیست</a></li>
+										</ul>
+									</div>
+
+									<!-- options for message list -->
+									<div id="messages_btn" class="btn-group">
+										<button data-bs-toggle="dropdown"><i class="la la-cogs"></i></button>
+										<ul role="menu" class="dropdown-menu float-end">
+											<li><a class="dropdown-item" href="#">مسدود کردن کاربر</a></li>
+											<li><a class="dropdown-item" href="#">پاک کردن پیام ها</a></li>
+											<li><a class="dropdown-item" href="#">ایمیل کردن گفت و گو</a></li>
+										</ul>
+									</div>
+
+									<!-- log out from live chat -->
+									<button id="log_outer"><i class="t#444 la la-power-off"></i></button>
+								</div>
+
+								<!-- /end chat buttons -->
+								<div class="back-to">
+									<i class="la la-2x la-hand-o-right"></i>
+								</div>
+							</div>
+							<!-- /End chat header -->
+
+							<!-- chat body -->
+							<div class="tower-body js-control b#6c7a89">
+
+
+								<!-- users list fade -->
+								<div id="chat_users">
+
+									<!-- user loop -->
+									<div class="media bgtxt-themecolor"> 
+										<img src="img/other/avatar2.jpg" alt="بارگذاری نشد" data-lity> 
+										<div class="media-body"> 
+											<p>سمانه</p>
+											<small>3:30 بعد از ظهر</small>
+											<p>ایالات متحده آمریکا</p>
+										</div> 
+									</div>
+									<!-- /End user loop -->
+
+									<!-- user loop -->
+									<div class="media bgtxt-themecolor"> 
+										<img src="img/other/avatar1.jpg" alt="بارگذاری نشد" data-lity> 
+										<div class="media-body"> 
+											<p>سمیه</p>
+											<small>1:30 بعد از ظهر</small>
+											<p>ایالات متحده آمریکا</p>
+										</div>
+									</div>
+									<!-- /End user loop -->
+
+									<!-- user loop -->
+									<div class="media bgtxt-themecolor"> 
+										<img src="img/other/avatar3.jpg" alt="بارگذاری نشد" data-lity> 
+										<div class="media-body"> 
+											<p>مجید</p>
+											<small>9:30 صبح</small>
+											<p>کارگردان هنری</p>
+										</div> 
+									</div>
+									<!-- /End user loop -->
+
+									<!-- user loop -->
+									<div class="media bgtxt-themecolor"> 
+										<img src="img/other/avatar4.jpg" alt="بارگذاری نشد" data-lity> 
+										<div class="media-body"> 
+											<p>محمد</p>
+											<small>8:00 صبح</small>
+											<p>تیم سئو</p>
+										</div> 
+									</div>
+									<!-- /End user loop -->
+								</div>
+								<!-- /End chat_users -->
+
+
+								<!-- messages of user fade -->
+								<div id="user_message">
+									<div class="chat-line">
+										<abbr>امروز</abbr>
+									</div>
+									<!-- Message loop -->
+									<div class="direct-chat-msg">
+										<img src="img/other/avatar5.jpg" alt="بارگذاری نشد" data-lity>
+										<div class="chat-info clearfix"><span>لورم</span></div>
+
+										<div class="direct-chat-text">
+											من هنگام ورود به حساب کاربری خود خطایی دریافت کردم. معنی این خطاها چیست؟
+										</div>
+
+										<div class="chat-info clearfix">
+											<small class="float-end">3:36 بعد از ظهر</small>
+										</div>
+									</div>
+									<!-- /End message loop -->
+									<!-- Message loop -->
+									<div class="direct-chat-msg">
+										<img src="img/other/admin.jpg" alt="بارگذاری نشد" data-lity>
+										<div class="chat-info clearfix"><span>مدیر</span></div>
+
+										<div class="direct-chat-text">
+											سلام، می توانم متن خطا را ببینم؟
+										</div>
+
+										<div class="chat-info clearfix">
+											<small class="float-end">3:37 بعد از ظهر</small>
+										</div>
+									</div>
+									<!-- /End message loop -->
+									<!-- Message loop -->
+									<div class="direct-chat-msg">
+										<img src="img/other/avatar5.jpg" alt="بارگذاری نشد" data-lity>
+										<div class="chat-info clearfix"><span>لورم</span></div>
+
+										<div class="direct-chat-text">
+											<img src="img/other/warning.jpg" alt="بارگذاری نشد" data-lity>
+										</div>
+										<div class="chat-info clearfix">
+											<small class="float-end">3:40 بعد از ظهر</small>
+										</div>
+									</div>
+									<!-- /End message loop -->
+									<!-- Message loop -->
+									<div class="direct-chat-msg">
+										<img src="img/other/avatar5.jpg" alt="بارگذاری نشد" data-lity>
+										<div class="chat-info clearfix"><span>لورم</span></div>
+
+										<div class="direct-chat-text">
+											ببخشید، تصویر را اشتباه فرستادم. تصویر درست:
+										</div>
+										<div class="chat-info clearfix">
+											<small class="float-end">3:40 بعد از ظهر</small>
+										</div>
+									</div>
+									<!-- /End message loop -->
+									<!-- Message loop -->
+									<div class="direct-chat-msg">
+										<img src="img/other/avatar5.jpg" alt="بارگذاری نشد" data-lity>
+										<div class="chat-info clearfix"><span>لورم</span></div>
+
+										<div class="direct-chat-text">
+											<img src="img/other/error.jpg" alt="بارگذاری نشد" data-lity>
+										</div>
+										<div class="chat-info clearfix">
+											<small class="float-end">3:45 بعد از ظهر</small>
+										</div>
+									</div>
+									<!-- /End message loop -->
+								</div>
+								<!-- /End user_message -->
+
+							</div>
+							<!-- /End chat body -->
+							
+							<!-- chat fotter -->
+							<div class="tower-foot b#fff">
+								<textarea id="status_message" placeholder="پیام خود را بنویسید..." name="message"></textarea>
+								<div class="btn-footer">
+									<span class="bg_none">
+										<i class="la la-film"></i>
+										<input name="uploadvideo" role="button" tabindex="0" type="file" accept=".mp4,.avi,.mkv,.mov" />
+									</span>
+									<span class="bg_none">
+										<i class="la la-camera"></i>
+										<input name="uploadimage" role="button" tabindex="0" type="file" accept=".jpg,.png,.gif" />
+									</span>
+									<span class="bg_none">
+										<i class="la la-paperclip"></i>
+										<input name="uploadfile" role="button" tabindex="0" type="file" accept=".xls,.xlsx,.doc,.docx,.pdf,.xps,.psd" />
+									</span>
+
+									<!-- send message -after load each message pleas run "chat_scroller();" js function- -->
+									<button id="send_btn" class="bg_none float-end"><i class="la la-send"></i></button>
+								</div>
+							</div>
+							<!-- /End chat fotter -->
+
+						</div>
+						<!-- /End chat -->
+					</div>
+					<!-- /End chats tab -->
+					
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</section>
+		<!-- /End side panel -->
+
+
+
+		<!-- sidebar -->
+		<aside id="sidebar" class="is-open"><!-- This id(=sidebar) is important -->
+			<div id="menu_ver" class="StickySidebar">
+
+				<!-- brand title (show when top menu is not fixed) -->
+				<div class="hiddenbrand">
+					گروه مهندسی ویژن
+				</div>
+
+				<!-- admin details -->
+				<div class="container-fluid py-3 administrator"> 
+					<div class="row mb-2">
+						<div class="col-5 admin-pic">
+							<img class="img-rounded" src="img/other/admin.jpg" alt="بارگذاری نشد" data-lity>
+						</div>
+						<div class="col-7 admin-name">
+							<div id="my_name">آلبرت اینشتین</div>
+							<div class="gooleh b#4CAF50"></div>
+							<span>حسابدار</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col text-center">
+							<a href="#"><i class="la la-key"></i></a>
+						</div>
+						<div class="col text-center">
+							<a href="#"><i class="la la-envelope-o"></i></a>
+							<span class="badge bg-danger admin-alert blink">4</span>
+						</div>
+						<div class="col text-center">
+							<a href="#"><i class="la la-power-off"></i></a>
+						</div>
+					</div>
+					<span id="admin_close" class="la la-times"></span>
+				</div>
+				<!-- /End admin details --> 
+
+
+				<!-- accordion menu -->
+				<div id="cssmenu">
+					<ul>
+						<li class="sidebar-menu-separator"></li>
+
+						<!-- Dashboard -->
+						<li>
+							<a href="index-2.html">
+								<i class="la la-tachometer"></i> 
+								<span>پیشخوان</span>
+							</a>
+						</li>
+
+						<!-- UI elements -->
+						<li class="has-sub">
+							<a>
+								<i class="la la-suitcase"></i>
+								<span>رابط کاربری</span>
+								<span class="badge bgtxt-themecolor">5</span>
+							</a>
+							<ul>
+								<li><a href="progress-bars.html">نوارهای پیشرفت</a></li>
+								<li><a href="containers.html">کانتینرها</a></li>
+								<li><a href="notifications.html">اطلاعیه ها</a></li>
+								<li><a href="buttons.html">دکمه ها</a></li>
+								<li class="has-sub">
+									<a>متریال <span class="badge b#ef7 t#333">2</span></a>
+									<ul>
+									   <li><a href="material.html">عناصر متریال</a></li>
+									   <li><a href="ihover.html">آی هاور<span class="badge b#f00">تازه</span></a></li>
+									</ul>
+								</li>
+								<li><a href="modal.html">مودال</a></li>
+								<li><a href="collapse-tree.html">نمودار درختی و آکاردئون</a></li>
+								<li><a href="widget.html">ابزارک ها</a></li>
+							</ul>
+						</li>
+
+						<!-- Forms -->
+						<li class="has-sub">
+							<a>
+								<i class="la la-wpforms"></i> 
+								<span>فرم ها</span>
+							</a>
+							<ul>
+								<li><a href="form-ui.html">رابط کاربری</a></li>
+								<li><a href="form-validation.html">اعتبارسنجی</a></li>
+								<li><a href="form-wizard.html">ویزارد</a></li>
+								<li><a href="editor.html">ویرایشگر</a></li>
+							</ul>
+						</li>
+
+						<li class="sidebar-menu-separator"></li>
+						<li class="sidebar-menu-separator"></li>
+
+						<!-- Tables -->
+						<li class="has-sub">
+							<a>
+								<i class="la la-table"></i> 
+								<span>جدول ها</span>
+							</a>
+							<ul>
+								<li><a href="table-static.html">استاتیک</a></li>
+								<li><a href="table-dynamic.html">داینامیک</a></li>
+							</ul>
+						</li>
+
+						<!-- Spesial pages -->
+						<li class="has-sub">
+							<a>
+								<i class="la la-gift"></i> 
+								<span>برگه های ویژه</span>
+							</a>
+							<ul>
+								<li><a href="mail.html">تبادل پیام</a></li>
+								<li><a href="calendar.html">تقویم شمسی و میلادی</a></li>
+								<li><a href="gallery.html">گالری</a></li>
+								<li><a href="file-manager.html">مدیریت فایل</a></li>
+								<li><a href="weather.html">آب و هوا</a></li>
+								<li><a href="blank.html">برگه خالی</a></li>
+							</ul>
+						</li>
+
+						<!-- Charts -->
+						<li class="has-sub">
+							<a>
+								<i class="la la-bar-chart"></i> 
+								<span>نمودارها</span>
+							</a>
+							<ul>
+								<li><a href="chart-canvasjs.html">نمودار canvas js</a></li>
+								<li><a href="chart-js.html">نمودار js</a></li>
+								<li><a href="chart-flot.html">نمودار شناور</a></li>
+								<li><a href="chart-easypie.html">نمودار دایره ای</a></li>
+							</ul>
+						</li>
+
+						<!-- Users -->
+						<li class="has-sub">
+							<a>
+								<i class="la la-users"></i> 
+								<span>کاربران</span>
+							</a>
+							<ul>
+								<li><a href="user-all.html">همه ی کاربران</a></li>
+								<li><a href="user-profile.html">پروفایل</a></li>
+								<li><a href="user-login1.html">برگه ورود</a></li>
+								<li class="has-sub"><a>برگه ثبت نام</a>
+									<ul>
+										<li><a href="user-register1.html">ثبت نام 1</a></li>
+										<li><a href="user-register2.html">ثبت نام 2</a></li>
+									</ul>
+								</li>
+								<li><a href="user-lockscreen1.html">قفل کردن صفحه</a></li>
+							</ul>
+						</li>
+
+						<li class="sidebar-menu-separator"></li>
+
+						<!-- Extra pages -->
+						<li class="has-sub">
+							<a>
+								<i class="la la-file"></i> 
+								<span>برگه های اضافه</span>
+							</a>
+							<ul>
+								<li><a href="page-404.html">ارور 404</a></li>
+								<li><a href="page-500.html">ارور 500</a></li>
+							</ul>
+						</li>
+
+						<!-- Google map -->
+						<li>
+							<a href="map-google.html">
+								<i class="la la-map-marker"></i> 
+								<span>نقشه</span>
+							</a>
+						</li>
+
+						<!-- Vector map -->
+						<li>
+							<a href="map-vector.html">
+								<i class="la la-map-o"></i> 
+								<span>وکتور</span>
+							</a>
+						</li> <!-- -->
+					</ul>
+
+					<ul id="user_btn" class="float-end">
+						<li><i class="la la-user la-2x"></i></li>
+					</ul>
+				</div>
+				<!-- /End accordion menu -->
+
+			</div>
+		</aside>
+		<!-- /End sidebar -->
+
+
+
+		<!-- content -->
+		<section class="clearfix">
+			<div id="content" class="col-12">
+
+				<!-- title and breadcrumb -->
+				<div class="page-header">
+					<h2 class="page-title">استایل فرم ها</h2>
+
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index-2.html">پیشخوان</a></li>
+						<li class="breadcrumb-item">فرم ها</li>
+						<li class="breadcrumb-item">استایل فرم ها</li>
+					</ol>
+
+					<div class="Jalali float-end">
+						<p id="JalaliDayAndDate"></p>
+					</div>
+				</div>
+				<!-- /End title and breadcrumb -->
+
+
+				<table id="content_table">
+					<tr class="row1">
+					  	<td id="column0" class="connectcolumn" colspan="2">
+
+							<!-- Inline forms -->
+							<div class="card" id="inline">
+								<div class="card-header">
+									<i class="la la-hashtag sort-hand"></i>
+									فرم های خطی
+									<div class="pan-btn expand min"></div>
+								</div>
+								<div class="card-body">
+
+									<form class="input-group form-inline">
+
+										<span class="input-group-text">نام</span>
+										<input type="text" class="form-control" id="exampleInputName2">
+
+										<span class="input-group-text">ایمیل</span>
+										<input type="email" class="form-control formlatin" id="exampleInputEmail2">
+
+										<button type="submit" class="btn btn-themecolor">ارسال دعوتنامه</button>
+
+									</form>
+
+									<form class="input-group form-inline m-t-20">
+
+										<span class="input-group-text">ایمیل</span>
+										<input type="email" class="form-control formlatin">
+
+										<span class="input-group-text">رمز عبور</span>
+										<input type="password" class="form-control formlatin">
+
+										<div class="input-group-text">
+											<input class="form-check-input me-1" type="checkbox">به خاطر بسپار
+										</div>
+
+										<button type="submit" class="btn btn-themecolor">ورود</button>
+
+									</form>
+
+									<form class="input-group form-inline m-t-20">
+
+										<span class="input-group-text">هزینه:</span>
+										<input type="text" class="form-control formlatin" id="exampleInputAmount" placeholder="هزینه">
+										<span class="input-group-text">تومان</span>
+
+										<button type="submit" class="btn btn-themecolor">انتقال پول</button>
+
+									</form>
+
+								</div>
+							</div>
+							<!-- /End Inline forms -->
+
+					  	</td>
+					</tr>
+
+					<tr class="row2">
+			          	<td id="column1" class="connectcolumn">
+
+							<!-- Switch checkbox -->
+							<div class="card" id="switch-label">
+								<div class="card-header">
+									<i class="la la-hashtag sort-hand"></i>
+									چک باکس با قابلیت سوییچ
+									<div class="pan-btn expand min"></div>
+								</div>
+								<div class="card-body">
+
+									<p class="mb-1 mt-2">رنگ هماهنگ با قالب</p>
+									<ul class="list-group">
+
+										<li class="list-group-item">
+											گزینه:
+											<div class="material-switch float-end">
+												<input id="switch116" type="checkbox" checked /> <!-- attention to id -->
+												<label for="switch116" class="bg-themecolor"></label> <!-- attention to for -->
+											</div>
+										</li>
+
+									</ul>
+
+									<p class="mb-1 mt-3">رنگ  دلخواه</p>
+									<ul class="list-group">
+
+										<li class="list-group-item">
+											گزینه:
+											<div class="material-switch float-end">
+												<input id="switch226" type="checkbox" checked /> <!-- attention to id -->
+												<label for="switch226" class="b#FFD600"></label> <!-- attention to for -->
+											</div>
+										</li>
+
+										<li class="list-group-item">
+											گزینه:
+											<div class="material-switch float-end">
+												<input id="switch227" type="checkbox" checked /> <!-- attention to id -->
+												<label for="switch227" class="b#00ACC1"></label> <!-- attention to for -->
+											</div>
+										</li>
+
+										<li class="list-group-item">
+											گزینه:
+											<div class="material-switch float-end">
+												<input id="switch228" type="checkbox" checked /> <!-- attention to id -->
+												<label for="switch228" class="b#E91E63"></label> <!-- attention to for -->
+											</div>
+										</li>
+
+										<li class="list-group-item">
+											گزینه:
+											<div class="material-switch float-end">
+												<input id="switch229" type="checkbox" checked /> <!-- attention to id -->
+												<label for="switch229" class="b#607D8B"></label> <!-- attention to for -->
+											</div>
+										</li>
+
+										<li class="list-group-item">
+											گزینه:
+											<div class="material-switch float-end">
+												<input id="switch2210" type="checkbox" checked /> <!-- attention to id -->
+												<label for="switch2210" class="b#795548"></label> <!-- attention to for -->
+											</div>
+										</li>
+									</ul>
+
+									<p class="mb-1 mt-3">رنگ  های بوت استرپ متریال</p>
+									<ul class="list-group">
+
+										<li class="list-group-item">
+											گزینه:
+											<div class="material-switch float-end">
+												<input id="switch223" type="checkbox" checked /> <!-- attention to id -->
+												<label for="switch223" class="bg-primary"></label> <!-- attention to for -->
+											</div>
+										</li>
+
+										<li class="list-group-item">
+											گزینه:
+											<div class="material-switch float-end">
+												<input id="switch224" type="checkbox" checked /> <!-- attention to id -->
+												<label for="switch224" class="bg-secondary"></label> <!-- attention to for -->
+											</div>
+										</li>
+
+										<li class="list-group-item">
+											گزینه:
+											<div class="material-switch float-end">
+												<input id="switch225" type="checkbox" checked /> <!-- attention to id -->
+												<label for="switch225" class="bg-success"></label> <!-- attention to for -->
+											</div>
+										</li>
+
+										<li class="list-group-item">
+											گزینه:
+											<div class="material-switch float-end">
+												<input id="switch226" type="checkbox" checked /> <!-- attention to id -->
+												<label for="switch226" class="bg-info"></label> <!-- attention to for -->
+											</div>
+										</li>
+
+										<li class="list-group-item">
+											گزینه:
+											<div class="material-switch float-end">
+												<input id="switch227" type="checkbox" checked /> <!-- attention to id -->
+												<label for="switch227" class="bg-warning"></label> <!-- attention to for -->
+											</div>
+										</li>
+
+										<li class="list-group-item">
+											گزینه:
+											<div class="material-switch float-end">
+												<input id="switch228" type="checkbox" checked /> <!-- attention to id -->
+												<label for="switch228" class="bg-danger"></label> <!-- attention to for -->
+											</div>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+							<!-- /End Switch checkbox -->
+
+
+							<!-- Shamsi date picker -->
+							<div class="card" id="date_picker">
+								<div class="card-header">
+									<i class="la la-hashtag sort-hand"></i>
+									انتخاب تاریخ شمسی
+									<div class="pan-btn expand min"></div>
+								</div>
+								<div class="card-body">
+
+									<p>راهنما: <a href="https://github.com/majidh1/JalaliDatePicker">کلیک کنید</a></p>
+
+									<input id="jDP_test" class="form-control" type="text" data-jdp>
+
+								</div>
+							</div>
+							<!-- /End Shamsi date picker -->
+
+
+							<!-- coloris color picker -->
+							<div class="card" id="coloris">
+								<div class="card-header">
+									<i class="la la-hashtag sort-hand ui-sortable-handle"></i>
+									رنگ ساز ها
+									<div class="pan-btn expand min"><span class="minimize_btn la la-chevron-up waves-effect waves-circle"></span><span class="fullsize_btn la la-expand waves-effect waves-circle"></span></div>
+								</div>
+								<div class="card-body">
+
+									<label for="exampleColorInput" class="form-label">انتخاب رنگ پیشفرض:</label>
+									<input type="color" class="form-control form-control-color" id="exampleColorInput" value="#ffffff" title="Choose your color">
+
+									<p class="mb-0 mt-3">انتخاب رنگ حرفه ای:</p>
+									<div class="coloris-square"> <!-- or .coloris-circle -->
+										<input type="text" class="coloris-picker formlatin" value="rgb(100, 100, 100)" />
+									</div>
+
+									<span>راهنما:</span>
+									<a class="link-themecolor" target="_blank" href="https://www.cssscript.com/color-picker-coloris/">Coloris color picker</a>
+
+								</div>
+							</div>
+							<!-- /End jquery ui color picker -->
+
+
+							<!-- Input groups -->
+							<div class="card" id="groups">
+
+								<div class="card-header">
+									<i class="la la-hashtag sort-hand"></i>
+									گروه های ورودی لاتین
+									<div class="pan-btn expand min"></div>
+								</div>
+
+								<div class="card-body">
+									
+									<p>بعضی از فیلد های ورودی مانند ایمیل، آدرس سایت یا نام کاربری باید لاتین باشند که با اضافه کردن کلاس formlatin به صورت خودکار این اتفاق می افتد</p>
+
+									<div class="input-group m-b-10">
+										<label class="input-group-text">نام کاربری</label>
+										<input class="form-control formlatin" id="i3" type="text">
+										<span class="input-group-text">@</span>
+									</div>
+
+									<div class="input-group m-b-10">
+										<label class="input-group-text">ایمیل</label>
+										<span class="input-group-text formlatin">@example.com</span>
+										<input class="form-control formlatin" id="i4" type="email">
+									</div>
+
+									<div class="input-group m-b-10">
+										<label class="input-group-text">مبلغ (البته به دلار)</label>
+										<span class="input-group-text formlatin">.00</span>
+										<input class="form-control formlatin" id="i5" type="text" />
+										<span class="input-group-text">$</span>
+									</div>
+
+									<p>آدرس URL وبسایت</p>
+									<div class="input-group">
+										<label class="input-group-text">URL :</label>
+										<input class="form-control formlatin" type="text" />
+										<span class="input-group-text formlatin">https://example.com/users/</span>
+									</div>
+								</div>
+							</div> 
+							<!-- /End Input groups -->
+
+
+							<!-- Basic form -->
+							<div class="card" id="basic">
+								<div class="card-header">
+									<i class="la la-hashtag sort-hand"></i>
+									فرم با برچسب شناور
+									<div class="pan-btn expand min"></div>
+								</div>
+								<div class="card-body">
+
+									<form>
+										<div class="form-floating mb-3">
+											<input type="email" class="form-control formlatin" id="exampleInputEmail1" placeholder="name@example.com" />
+											<label for="exampleInputEmail1">ایمیل</label>
+										</div>
+										<div class="form-floating mb-3">
+											<input type="password" class="form-control formlatin" id="exampleInputPassword1" placeholder="Password" />
+											<label for="exampleInputPassword1">رمزعبور</label>
+										</div>
+										<div class="form-group mb-3">
+											<label class="form-label" for="exampleInputFile">انتخاب فایل</label>
+											<input class="form-control" type="file" id="exampleInputFile" />
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+											<label class="form-check-label" for="flexCheckDefault">روی من کلیک کن</label>
+										</div>
+										<button type="submit" class="btn btn-themecolor float-end">ارسال</button>
+									</form>
+
+								</div>
+							</div>
+							<!-- /End Basic form -->
+
+
+							<!-- Horizontal form -->
+							<div class="card" id="horizontal">
+								<div class="card-header">
+									<i class="la la-hashtag sort-hand"></i>
+									فرم افقی
+									<div class="pan-btn expand min"></div>
+								</div>
+								<div class="card-body">
+
+									<form>
+										<div class="row mb-3">
+											<label for="inputEmail3" class="col-sm-2 col-form-label">ایمیل</label>
+											<div class="col-sm-10">
+												<input type="email" class="form-control formlatin" id="inputEmail3" placeholder="ایمیل">
+											</div>
+										</div>
+										<div class="row mb-3">
+											<label for="inputPassword3" class="col-sm-2 control-form-label">رمزعبور</label>
+											<div class="col-sm-10">
+												<input type="password" class="form-control formlatin" id="inputPassword3" placeholder="رمزعبور">
+											</div>
+										</div>
+										<div class="row mb-3">
+											<div class="offset-sm-2 col-sm-10">
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value="" id="flexCheck3" />
+													<label class="form-check-label" for="flexCheck3">روی من کلیک کن</label>
+												</div>
+											</div>
+										</div>
+										<div class="row mb-3">
+											<div class="offset-sm-2 col-sm-10">
+												<button type="submit" class="btn btn-themecolor">ورود</button>
+											</div>
+										</div>
+									</form>
+
+								</div>
+							</div>
+							<!-- /End Horizontal form -->
+
+
+							<!-- TextArea -->
+							<div class="card" id="TextArea">
+								<div class="card-header">
+									<i class="la la-hashtag sort-hand"></i>
+									ورودی متن
+									<div class="pan-btn expand min"></div>
+								</div>
+								<div class="card-body">
+
+									<div class="input-group mb-3">
+										<span class="input-group-text" id="sizing-addon1">ورودی متن</span>
+										<input type="text" class="form-control" />
+									</div>
+
+									<div class="input-group">
+										<span class="input-group-text">متن طولانی</span>
+										<textarea class="form-control" aria-label="متن طولانی"></textarea>
+									</div>
+
+								</div>
+							</div>
+							<!-- /End TextArea -->
+
+			          	</td>
+
+			          	<td id="column2" class="connectcolumn">
+
+							<!-- colorfull inputs -->
+							<div class="card" id="colorfull">
+								<div class="card-header">
+									<i class="la la-hashtag sort-hand"></i>
+									ورودی های رنگی
+									<div class="pan-btn expand min"></div>
+								</div>
+								<div class="card-body">
+
+									<div class="mb-3">
+										<label class="form-label">نام کامل</label>
+										<input class="form-control border-primary text-primary" type="text">
+										<span class="help-block">لطفا نام را به فارسی و کامل وارد کنید</span>
+									</div>
+
+									<div class="mb-3">
+										<label class="form-label">نام کامل</label>
+										<input class="form-control border-success text-success" type="text">
+										<span class="help-block">لطفا نام را به فارسی و کامل وارد کنید</span>
+									</div>
+
+									<div class="mb-3">
+										<label class="form-label">نام کامل</label>
+										<input class="form-control border-info text-info" type="text">
+										<span class="help-block">لطفا نام را به فارسی و کامل وارد کنید</span>
+									</div>
+
+									<div class="mb-3">
+										<label class="form-label">نام کامل</label>
+										<input class="form-control border-warning text-warning" type="text">
+										<span class="help-block">لطفا نام را به فارسی و کامل وارد کنید</span>
+									</div>
+
+									<div class="mb-3">
+										<label class="form-label">نام کامل</label>
+										<input class="form-control border-danger text-danger" type="text">
+										<span class="help-block">لطفا نام را به فارسی و کامل وارد کنید</span>
+									</div>
+
+								</div>
+							</div> 
+							<!-- /End colorfull inputs -->
+
+
+							<!-- Checkboxes and radios -->
+							<div class="card" id="CheckRadio">
+								<div class="card-header">
+									<i class="la la-hashtag sort-hand"></i>
+									چک باکس و دکمه های رادیویی
+									<div class="pan-btn expand min"></div>
+								</div>
+								<div class="card-body">
+
+									<p class="m-t-10">چک باکس فعال و غیر فعال:</p>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheck5">
+										<label class="form-check-label" for="flexCheck5">گزینه 1 - فعال</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheck6" disabled>
+										<label class="form-check-label" for="flexCheck6">گزینه 2 - غیرفعال شده</label>
+									</div>
+
+
+									<p class="m-t-30">رادیو باکس فعال و غیر فعال:</p>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="flexRadioDefault" value="" id="flexCheck7">
+										<label class="form-check-label" for="flexCheck7">
+											گزینه 1 - لورم ایپسوم متنی ساختگی است.
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="flexRadioDefault" value="" id="flexCheck8">
+										<label class="form-check-label" for="flexCheck8">
+											گزینه 2 - می توانید چیز دیگری به غیر از گزینه 1 باشد.
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="flexRadioDefault" value="" id="flexCheck9" disabled>
+										<label class="form-check-label" for="flexCheck9">
+											گزینه 3 - غیرفعال شده
+										</label>
+									</div>
+
+
+									<p class="m-t-30">چک باکس خطی</p>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheck15">
+										<label class="form-check-label" for="flexCheck15">گزینه 1</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheck16">
+										<label class="form-check-label" for="flexCheck16">گزینه 2</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheck17" disabled>
+										<label class="form-check-label" for="flexCheck17">گزینه 3</label>
+									</div>
+
+
+									<p class="m-t-30">رادیو باکس خطی</p>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexCheck27" value="">
+										<label class="form-check-label" for="flexCheck27">
+											گزینه 1
+										</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexCheck28" value="">
+										<label class="form-check-label" for="flexCheck28">
+											گزینه 2
+										</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexCheck29" value="" disabled>
+										<label class="form-check-label" for="flexCheck29">
+											گزینه 3
+										</label>
+									</div>
+
+
+									<p class="m-t-30">چک باکس و رادیو باکس مدرن با رنگ متناسب قالب</p>
+									<div class="m-b-10 m-t-15">
+										<input class="new check" id="check1" type="checkbox" checked /> 
+										<label for="check1"></label>
+										<label for="check1">انتخاب</label>
+
+										<input class="new check" id="check2" type="checkbox" checked /> 
+										<label for="check2"></label>
+										<label for="check2">انتخاب</label>
+									</div>
+
+									<div class="m-t-10">
+										<input class="new radio" name="RadioOptions1" id="radio1" type="radio" checked /> 
+										<label for="radio1"></label>
+										<label for="radio1">این</label>
+
+										<input class="new radio" name="RadioOptions1" id="radio2" type="radio" /> 
+										<label for="radio2"></label>
+										<label for="radio2">یا این</label>
+									</div>
+								</div>
+							</div>
+							<!-- /End Checkboxes and radios -->
+
+
+							<!-- Check btn -->
+							<div class="card" id="Check_btn">
+								<div class="card-header">
+									<i class="la la-hashtag sort-hand"></i>
+									چک باکس و رادیو باکس دکمه ای
+									<div class="pan-btn expand min"></div>
+								</div>
+								<div class="card-body">
+
+									انتخاب به سبک «و» (رنگ متناسب با قالب)
+									<div class="m-t-10 m-b-25">
+										<div class="btn-group">
+
+											<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+											<label class="btn btn-outline-themecolor" for="btncheck1">گزینه 1</label>
+
+											<input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+											<label class="btn btn-outline-themecolor" for="btncheck2">و گزینه 2</label>
+
+											<input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+											<label class="btn btn-outline-themecolor" for="btncheck3">و گزینه 3</label>
+
+										</div>
+									</div>
+
+									انتخاب به سبک «یا» (رنگ متناسب با قالب
+									<div class="m-t-10 m-b-5">
+										<div class="btn-group">
+
+											<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+											<label class="btn btn-outline-themecolor" for="btnradio1">گزینه 1</label>
+
+											<input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+											<label class="btn btn-outline-themecolor" for="btnradio2">یا گزینه 2</label>
+
+											<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+											<label class="btn btn-outline-themecolor" for="btnradio3">یا گزینه 3</label>	
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<!-- /End Check btn -->
+
+
+							<!-- Sizing -->
+							<div class="card" id="sizing">
+								<div class="card-header">
+									<i class="la la-hashtag sort-hand"></i>
+									اندازه های مختلف
+									<div class="pan-btn expand min"></div>
+								</div>
+								<div class="card-body">
+
+									<div class="input-group input-group-lg">
+										<input type="text" class="form-control formlatin" placeholder="نام کاربری" aria-describedby="sizing-addon1">
+										<span class="input-group-text" id="sizing-addon1">@</span>
+									</div>
+
+									<br>
+									<div class="input-group">
+										<span class="input-group-text" id="sizing-addon2">@</span>
+										<input type="text" class="form-control formlatin" placeholder="نام کاربری" aria-describedby="sizing-addon2">
+									</div>
+
+									<br>
+									<div class="input-group input-group-sm">
+										<input type="text" class="form-control formlatin" placeholder="نام کاربری" aria-describedby="sizing-addon3">
+										<span class="input-group-text" id="sizing-addon3">@</span>
+									</div>
+
+								</div>
+							</div>
+							<!-- /End Sizing -->
+
+
+							<!-- Button addons -->
+							<div class="card" id="addons">
+								<div class="card-header">
+									<i class="la la-hashtag sort-hand"></i>
+									فیلد های افزودنی
+									<div class="pan-btn expand min"></div>
+								</div>
+								<div class="card-body">
+
+									<div class="input-group m-b-10">
+										<button class="btn btn-themecolor" type="button">برو!</button>
+										<input type="text" class="form-control" placeholder="جست و جو برای..." />
+									</div><!-- /input-group -->
+
+									<div class="input-group m-b-10">
+										<input type="text" class="form-control" placeholder="جست و جو برای..." />
+										<button class="btn btn-themecolor" type="button">برو!</button>
+									</div><!-- /input-group -->
+
+									<div class="input-group m-b-10">
+										<button type="button" class="btn btn-themecolor" aria-label="تو پر"><span class="la la-bold"></span></button> 
+										<button type="button" class="btn btn-themecolor" aria-label="مورب"><span class="la la-italic"></span></button> 
+										<input type="text" class="form-control" aria-label="...">
+									</div><!-- /input-group -->
+
+									<div class="input-group m-b-10">
+										<input type="text" class="form-control" aria-label="...">
+										<button type="button" class="btn btn-themecolor" aria-label="راهنمایی"><span class="la la-question"></span></button> 
+										<button type="button" class="btn btn-themecolor">اقدامات</button>
+									</div><!-- /input-group -->
+
+									<div class="input-group m-b-10">
+										<button type="button" class="btn btn-themecolor dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">اقدامات </button>
+										<ul class="dropdown-menu">
+											<li class="dropdown-item"><a href="#">گزینه 1</a></li>
+											<li class="dropdown-item"><a href="#">گزینه 2</a></li>
+											<li class="dropdown-item"><a href="#">گزینه 3</a></li>
+											<li class="dropdown-divider"></li>
+											<li class="dropdown-item"><a href="#">لینک جدا شده</a></li>
+										</ul>
+										<input type="text" class="form-control" aria-label="...">
+									</div><!-- /input-group -->
+
+									<div class="input-group m-b-10">
+										<input type="text" class="form-control" aria-label="...">
+										<button type="button" class="btn btn-themecolor dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">اقدامات </button>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li class="dropdown-item"><a href="#">گزینه 1</a></li>
+											<li class="dropdown-item"><a href="#">گزینه 2</a></li>
+											<li class="dropdown-item"><a href="#">گزینه 3</a></li>
+											<li role="separator" class="dropdown-divider"></li>
+											<li class="dropdown-item"><a href="#">لینک جدا شده</a></li>
+										</ul>
+									</div><!-- /input-group -->
+
+									<div class="input-group m-b-10">
+										<div class="input-group-text">
+											<input class="form-check-input mt-0" type="checkbox">
+										</div>
+										<input type="text" class="form-control">
+									</div><!-- /input-group -->
+
+									<div class="input-group m-b-10">
+										<div class="input-group-text">
+											<input class="form-check-input mt-0" type="radio">
+										</div>
+										<input type="text" class="form-control">
+									</div><!-- /input-group -->
+
+								</div>
+							</div>
+							<!-- /End Button addons -->
+
+
+							<!-- Selects -->
+							<div class="card" id="selects">
+								<div class="card-header">
+									<i class="la la-hashtag sort-hand"></i>
+									انتخاب
+									<div class="pan-btn expand min"></div>
+								</div>
+								<div class="card-body">
+
+									<p class="mb-0">انتخاب یک گزینه ای:</p>
+									<select class="form-select">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+
+									<p class="mb-0 mt-3">انتخاب چند گزینه ای:</p>
+									<select multiple class="form-select">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+
+								</div>
+							</div> 
+							<!-- /End Selects -->
+
+			          	</td>
+			        </tr>
+				</table>
+			</div>
+		</section>
+		<!-- /End content -->
+
+
+
+
+		<!-- Footer and copyright -->
+		<footer class="page-footer b#444=000 t#bbb=fff">
+			طراحی شده با <i class="la la-heart t#F22613"></i> توسط گروه مهندسی ویژن
+			<a href="javascript:;" id="ToTop" class="la la-arrow-up float-end"></a>
+		</footer>
+		<!-- /End Footer -->
+
+
+	</section>
+	<!-- /End main content -->
+
+
+	<!-- Patterns modal -->
+	<div class="modal fade" id="PatternsModal" tabindex="-1" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="staticBackdropLabel">الگوها</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body text-center">
+					<ol id="pattern_thumb">
+						<!-- Load with Ajax -->
+					</ol>					
+				</div>
+				<div class="modal-footer">
+					<input id="PattInput" type="hidden" />
+					<div class="btn-group">
+						<button id="BodyBtn" class="btn btn-info">تنظیم روی بدنه</button>
+						<button id="ContentBtn" class="btn btn-info">تنظیم روی محتوا</button>
+					</div>
+					<button id="RemoveBtn" class="btn btn-themecolor float-end">حذف الگوها</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /End patterns modal -->
+
+
+
+	<!-- downloaded scripts (for all pages) -->
+	<!-- colorclass, jquery, uery-ui, bootstrap, lity, malihu, mousetrap, toastr, Waves -->
+	<script type="text/javascript" src="js/pack.js"></script> 
+
+	<!-- custom script (for all pages) -->
+	<script type="text/javascript" src="js/custom-scripts.js"></script>
+	<script type="text/javascript" src="js/custom-functions.js"></script>
+
+
+	<!-- (for this pages) -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			// init date picker
+			jalaliDatepicker.startWatch({
+				useDropDownYears: false,
+			});
+
+
+			// init color picker
+			Coloris({
+				el: '.coloris-picker',
+				//theme: 'large',
+				themeMode: 'auto', // light, dark, auto
+				formatToggle: true,
+				swatchesOnly: false,
+				swatches: [
+					'#264653',
+					'#2a9d8f',
+					'#e9c46a',
+					'#f4a261',
+					'#e76f51',
+					'#d62828',
+					'#023e8a',
+					'#0077b6',
+					'#0096c7',
+					'#00b4d8',
+					'#48cae4',
+				]
+			});
+
+
+			// show today in date picker
+			$('#jDP_test').focus();
+			$('.jdp-btn-today').trigger('click');
+			$('#jDP_test').blur();
+
+		});
+
+	</script>
+
+</body>
+
+<!-- Mirrored from kajdook.com/dialog/v1.5/form-ui.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Jul 2022 17:59:20 GMT -->
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<!-- Mirrored from kajdook.com/dialog/v1.5/user-register2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Jul 2022 17:59:40 GMT -->
+<head>
+	<!-- Header meta tags -->
+	<meta charset="utf-8">
+	<title>دیالوگ - ثبت نام</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">     
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="assets/Register-Form/css/jquery.idealforms.css">
+
+	<link rel="stylesheet" type="text/css" href="css/font.css" />
+
+	<style>
+
+		body {
+			max-width: 980px;
+			margin: 2em auto;
+			font: normal 15px/1.5 'vazir';
+			color: #353535;
+			direction: rtl;
+		}
+		.content {
+			margin: 0 30px;
+		}
+
+		.field.buttons button {
+			margin-left: .5em;
+		}
+		#invalid {
+			display: none;
+			float: right;
+			width: 290px;
+			margin-right: 120px;
+			margin-top: .5em;
+			color: #CC2A18;
+			font-size: 130%;
+			font-weight: bold;
+		}
+		.idealforms.adaptive #invalid {
+			margin-right: 0 !important;
+		}
+		.idealforms.adaptive .field.buttons label {
+			height: 0;
+		}
+
+		.clr-picker {
+			display: none;
+		}
+
+	</style>
+
+	<!-- Fav and touch icons -->
+	<link rel="shortcut icon" href="img/favicon/favicon.png">
+
+	<!-- Header scripts -->
+	<script type="text/javascript" src="js/modernizr-custom.html"></script>
+</head>
+
+<body>
+
+	<h1 align="center">در سه مرحله ثبت نام کنید</h1>
+
+	<div class="content">
+		<div class="idealsteps-container">
+			<nav class="idealsteps-nav"></nav>
+			<form action="#" novalidate autocomplete="off" class="idealforms">
+				<div class="idealsteps-wrap"> 
+
+					<!-- Step 1 -->
+					<section class="idealsteps-step">
+						<div class="field">
+							<label class="main">نام کاربری:</label>
+							<input name="username" type="text" data-idealforms-ajax="/assets/Register-Form/ajax.php" />
+							<span class="error"></span>
+						</div>
+						<div class="field">
+							<label class="main">ایمیل:</label>
+							<input name="email" type="email">
+							<span class="error"></span> 
+						</div>
+						<div class="field">
+							<label class="main">رمزعبور:</label>
+							<input name="password" type="password" />
+							<span class="error"></span> 
+						</div>
+						<div class="field">
+							<label class="main">تکرار رمزعبور:</label>
+							<input name="confirmpass" type="password" />
+							<span class="error"></span> 
+						</div>
+						<div class="field">
+							<label class="main">تاریخ تولد:</label>
+							<input name="date" type="text" placeholder="mm/dd/yyyy" class="datepicker" />
+							<span class="error"></span>
+						</div>
+						<div class="field">
+							<label class="main">تصویر:</label>
+							<input id="picture" style="right:-9999px;" name="picture" type="file" multiple>
+							<span class="error"></span> 
+						</div>
+						<div class="field">
+							<label class="main">سایت:</label>
+							<input name="website" type="text" />
+							<span class="error"></span> 
+						</div>
+						<div class="field buttons">
+							<label class="main">&nbsp;</label>
+							<button type="button" class="next">بعدی &raquo;</button>
+						</div>
+					</section>
+
+					<!-- Step 2 -->
+					<section class="idealsteps-step">
+						<div class="field">
+							<label class="main">جنسیت:</label>
+							<p class="group">
+								<label>
+									<input name="sex" type="radio" value="male" /> مرد
+								</label>
+								<label>
+									<input name="sex" type="radio" value="female" /> زن
+								</label>
+							</p>
+							<span class="error"></span> 
+						</div>
+						<div class="field">
+							<label class="main">سرگرمی ها:</label>
+							<p class="group">
+								<label>
+									<input name="hobbies[]" type="checkbox" value="football" /> فوتبال
+								</label>
+								<label>
+									<input name="hobbies[]" type="checkbox" value="basketball" /> بسکتبال
+								</label>
+								<label>
+									<input name="hobbies[]" type="checkbox" value="dancing" /> مطالعه
+								</label>
+								<label>
+									<input name="hobbies[]" type="checkbox" value="dancing" /> پارکور
+								</label>
+								<label>
+									<input name="hobbies[]" type="checkbox" value="dancing" /> بازی های ویدیویی
+								</label>
+							</p>
+							<span class="error"></span> 
+						</div>
+						<div class="field buttons">
+							<label class="main">&nbsp;</label>
+							<button type="button" class="prev">&laquo; قبلی</button>
+							<button type="button" class="next">بعدی &raquo;</button>
+						</div>
+					</section>
+
+					<!-- Step 3 -->
+					<section class="idealsteps-step">
+						<div class="field">
+							<label class="main">شماره تلفن:</label>
+							<input name="phone" type="text" placeholder="000-000-0000" />
+							<span class="error"></span>
+						</div>
+						<div class="field">
+							<label class="main">کد پستی:</label>
+							<input name="zip" type="text" placeholder="00000" />
+							<span class="error"></span>
+						</div>
+						<div class="field">
+							<label class="main">گزینه ها:</label>
+							<select name="options" id="">
+								<option value="default">&ndash; یک گزینه را انتخاب کنید &ndash;</option>
+								<option value="1">یک</option>
+								<option value="2">دو</option>
+								<option value="3">سه</option>
+								<option value="4">چهار</option>
+							</select>
+							<span class="error"></span>
+						</div>
+						<div class="field">
+							<label class="main">توضیحات:</label>
+							<textarea name="comments" cols="30" rows="10"></textarea>
+							<span class="error"></span>
+						</div>
+						<div class="field buttons">
+							<label class="main">&nbsp;</label>
+							<button type="button" class="prev">&laquo; قبلی</button>
+							<button type="submit" class="submit">ارسال</button>
+						</div>
+					</section>
+				</div>
+				<span id="invalid"></span>
+			</form>
+		</div>
+	</div>
+ 
+
+	<!-- downloaded scripts (for all pages) -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="assets/Register-Form/js/out/jquery-ui.min.js"></script> 
+	<script type="text/javascript" src="assets/Register-Form/js/out/jquery.idealforms.js"></script> 
+
+	<!-- inline custom script (for this page) -->
+	<script>
+		$('form.idealforms').idealforms({
+
+			silentLoad: false,
+
+			rules: {
+				username: 'required username ajax',
+				email: 'required email',
+				password: 'required pass',
+				confirmpass: 'required equalto:password',
+				date: 'required date',
+				picture: 'required extension:jpg:png',
+				website: 'url',
+				'hobbies[]': 'minoption:2 maxoption:3',
+				phone: 'required phone',
+				zip: 'required zip',
+				options: 'select:default',
+			},
+
+			errors: {
+				'username': {
+					ajaxError: 'نام کاربری موجود نیست'
+				}
+			},
+
+			onSubmit: function(invalid, e) {
+				e.preventDefault();
+
+				$('#invalid')
+				.show()
+				.toggleClass('valid', ! invalid)
+				.text(invalid ? (invalid +' زمینه نامتعبر') : 'همه خوب هستند!');
+			},
+		});
+
+		$('form.idealforms').find('input, select, textarea').on('change keyup', function() {
+			$('#invalid').hide();
+		});
+
+		$('form.idealforms').idealforms('addRules', {
+			'comments': 'required minmax:50:200'
+		});
+
+		$('.prev').click(function(){
+			$('.prev').show();
+			$('form.idealforms').idealforms('prevStep');
+		});
+
+		$('.next').click(function(){
+			$('.next').show();
+			$('form.idealforms').idealforms('nextStep');
+		});
+	</script>
+
+	<!-- custom scripts (for this page) -->
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+
+			if(typeof Storage !== 'undefined' && localStorage.FirstSave == 'yes') { 
+				// theme full colors
+				$('body').attr("id", localStorage.FC );
+			}
+			else {
+				// or set cookie
+			}
+
+		});
+
+	</script>
+
+
+</body>
+
+<!-- Mirrored from kajdook.com/dialog/v1.5/user-register2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Jul 2022 17:59:41 GMT -->
+</html>
